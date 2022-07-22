@@ -200,6 +200,31 @@ Partial Class TLSE_miiprofile
         Me.Binary_cp_unknow = New System.Windows.Forms.TextBox()
         Me.ConvertB_copying = New System.Windows.Forms.TextBox()
         Me.valu_copying = New System.Windows.Forms.NumericUpDown()
+        Me.Binary_fc_unknow2 = New System.Windows.Forms.TextBox()
+        Me.Binary_favcolor = New System.Windows.Forms.TextBox()
+        Me.Binary_fc_unknow1 = New System.Windows.Forms.TextBox()
+        Me.ConvertB_favcolor = New System.Windows.Forms.TextBox()
+        Me.valu_favcolor = New System.Windows.Forms.NumericUpDown()
+        Me.Binary_gender = New System.Windows.Forms.TextBox()
+        Me.Binary_gd_unknow = New System.Windows.Forms.TextBox()
+        Me.ConvertB_gender = New System.Windows.Forms.TextBox()
+        Me.valu_gender = New System.Windows.Forms.NumericUpDown()
+        Me.Panel_edit_favcolor = New System.Windows.Forms.Panel()
+        Me.Icon_editcolor_purple = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_black = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_yellow = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_blue = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_lightblue = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_brown = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_red = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_lightgreen = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_pink = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_white = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_orange = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_green = New System.Windows.Forms.PictureBox()
+        Me.valu_lastmii = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_miidetected = New System.Windows.Forms.PictureBox()
+        Me.Text_miidetected = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -299,6 +324,23 @@ Partial Class TLSE_miiprofile
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_gender, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_edit_favcolor.SuspendLayout()
+        CType(Me.Icon_editcolor_purple, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_black, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_yellow, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_blue, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_lightblue, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_brown, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_red, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_lightgreen, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_pink, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_white, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_orange, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_editcolor_green, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -699,7 +741,6 @@ Partial Class TLSE_miiprofile
         Me.Panel_menu_opensave.Name = "Panel_menu_opensave"
         Me.Panel_menu_opensave.Size = New System.Drawing.Size(69, 34)
         Me.Panel_menu_opensave.TabIndex = 8
-        Me.Panel_menu_opensave.Visible = False
         '
         'Text_menu_save
         '
@@ -830,6 +871,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_copying.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_copying.TabIndex = 342
         Me.AdvH_copying.TabStop = False
+        Me.AdvH_copying.Visible = False
         '
         'AdvH_sharing
         '
@@ -841,6 +883,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_sharing.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_sharing.TabIndex = 341
         Me.AdvH_sharing.TabStop = False
+        Me.AdvH_sharing.Visible = False
         '
         'Icon_copying
         '
@@ -1629,6 +1672,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_favcolor.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_favcolor.TabIndex = 378
         Me.AdvH_favcolor.TabStop = False
+        Me.AdvH_favcolor.Visible = False
         '
         'Icon_favcolor
         '
@@ -1671,6 +1715,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_miigender.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_miigender.TabIndex = 393
         Me.AdvH_miigender.TabStop = False
+        Me.AdvH_miigender.Visible = False
         '
         'Panel6
         '
@@ -1722,6 +1767,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_grownkid.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_grownkid.TabIndex = 389
         Me.AdvH_grownkid.TabStop = False
+        Me.AdvH_grownkid.Visible = False
         '
         'AdvH_relarealtoyou
         '
@@ -1733,6 +1779,7 @@ Partial Class TLSE_miiprofile
         Me.AdvH_relarealtoyou.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_relarealtoyou.TabIndex = 388
         Me.AdvH_relarealtoyou.TabStop = False
+        Me.AdvH_relarealtoyou.Visible = False
         '
         'AdvH_creator
         '
@@ -1993,9 +2040,11 @@ Partial Class TLSE_miiprofile
         Me.PictureBox36.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox36.TabIndex = 400
         Me.PictureBox36.TabStop = False
+        Me.PictureBox36.Visible = False
         '
         'PictureBox31
         '
+        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox31.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox31.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
         Me.PictureBox31.Location = New System.Drawing.Point(405, 333)
@@ -2045,6 +2094,7 @@ Partial Class TLSE_miiprofile
         Me.PictureBox37.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox37.TabIndex = 404
         Me.PictureBox37.TabStop = False
+        Me.PictureBox37.Visible = False
         '
         'Label8
         '
@@ -2086,6 +2136,7 @@ Partial Class TLSE_miiprofile
         Me.PictureBox39.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox39.TabIndex = 412
         Me.PictureBox39.TabStop = False
+        Me.PictureBox39.Visible = False
         '
         'PictureBox38
         '
@@ -2097,6 +2148,7 @@ Partial Class TLSE_miiprofile
         Me.PictureBox38.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox38.TabIndex = 411
         Me.PictureBox38.TabStop = False
+        Me.PictureBox38.Visible = False
         '
         'Label15
         '
@@ -2204,7 +2256,7 @@ Partial Class TLSE_miiprofile
         Me.Panel_description.BackColor = System.Drawing.Color.Transparent
         Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_description
         Me.Panel_description.Controls.Add(Me.Text_description)
-        Me.Panel_description.Location = New System.Drawing.Point(0, 576)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 536)
         Me.Panel_description.Name = "Panel_description"
         Me.Panel_description.Size = New System.Drawing.Size(800, 30)
         Me.Panel_description.TabIndex = 414
@@ -2225,6 +2277,7 @@ Partial Class TLSE_miiprofile
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
         Me.PictureBox1.Location = New System.Drawing.Point(577, 335)
@@ -2236,6 +2289,7 @@ Partial Class TLSE_miiprofile
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
         Me.PictureBox2.Location = New System.Drawing.Point(481, 400)
@@ -2247,6 +2301,7 @@ Partial Class TLSE_miiprofile
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
         Me.PictureBox3.Location = New System.Drawing.Point(728, 400)
@@ -2336,12 +2391,281 @@ Partial Class TLSE_miiprofile
         Me.valu_copying.TabIndex = 430
         Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Binary_fc_unknow2
+        '
+        Me.Binary_fc_unknow2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_fc_unknow2.Location = New System.Drawing.Point(430, 515)
+        Me.Binary_fc_unknow2.Name = "Binary_fc_unknow2"
+        Me.Binary_fc_unknow2.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_fc_unknow2.TabIndex = 441
+        '
+        'Binary_favcolor
+        '
+        Me.Binary_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_favcolor.Location = New System.Drawing.Point(356, 515)
+        Me.Binary_favcolor.Name = "Binary_favcolor"
+        Me.Binary_favcolor.Size = New System.Drawing.Size(68, 13)
+        Me.Binary_favcolor.TabIndex = 439
+        '
+        'Binary_fc_unknow1
+        '
+        Me.Binary_fc_unknow1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_fc_unknow1.Location = New System.Drawing.Point(319, 515)
+        Me.Binary_fc_unknow1.Name = "Binary_fc_unknow1"
+        Me.Binary_fc_unknow1.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_fc_unknow1.TabIndex = 438
+        '
+        'ConvertB_favcolor
+        '
+        Me.ConvertB_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ConvertB_favcolor.Location = New System.Drawing.Point(319, 496)
+        Me.ConvertB_favcolor.Name = "ConvertB_favcolor"
+        Me.ConvertB_favcolor.Size = New System.Drawing.Size(142, 13)
+        Me.ConvertB_favcolor.TabIndex = 437
+        '
+        'valu_favcolor
+        '
+        Me.valu_favcolor.BackColor = System.Drawing.Color.PeachPuff
+        Me.valu_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_favcolor.Hexadecimal = True
+        Me.valu_favcolor.Location = New System.Drawing.Point(319, 474)
+        Me.valu_favcolor.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_favcolor.Name = "valu_favcolor"
+        Me.valu_favcolor.Size = New System.Drawing.Size(58, 16)
+        Me.valu_favcolor.TabIndex = 436
+        Me.valu_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Binary_gender
+        '
+        Me.Binary_gender.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_gender.Location = New System.Drawing.Point(578, 515)
+        Me.Binary_gender.Name = "Binary_gender"
+        Me.Binary_gender.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_gender.TabIndex = 451
+        '
+        'Binary_gd_unknow
+        '
+        Me.Binary_gd_unknow.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_gd_unknow.Location = New System.Drawing.Point(467, 515)
+        Me.Binary_gd_unknow.Name = "Binary_gd_unknow"
+        Me.Binary_gd_unknow.Size = New System.Drawing.Size(105, 13)
+        Me.Binary_gd_unknow.TabIndex = 448
+        '
+        'ConvertB_gender
+        '
+        Me.ConvertB_gender.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ConvertB_gender.Location = New System.Drawing.Point(467, 496)
+        Me.ConvertB_gender.Name = "ConvertB_gender"
+        Me.ConvertB_gender.Size = New System.Drawing.Size(142, 13)
+        Me.ConvertB_gender.TabIndex = 447
+        '
+        'valu_gender
+        '
+        Me.valu_gender.BackColor = System.Drawing.Color.PeachPuff
+        Me.valu_gender.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_gender.Hexadecimal = True
+        Me.valu_gender.Location = New System.Drawing.Point(467, 474)
+        Me.valu_gender.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_gender.Name = "valu_gender"
+        Me.valu_gender.Size = New System.Drawing.Size(58, 16)
+        Me.valu_gender.TabIndex = 446
+        Me.valu_gender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_edit_favcolor
+        '
+        Me.Panel_edit_favcolor.BackColor = System.Drawing.Color.Azure
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_purple)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_black)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_yellow)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_blue)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_lightblue)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_brown)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_red)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_lightgreen)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_pink)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_white)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_orange)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_green)
+        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(594, 294)
+        Me.Panel_edit_favcolor.Name = "Panel_edit_favcolor"
+        Me.Panel_edit_favcolor.Size = New System.Drawing.Size(201, 152)
+        Me.Panel_edit_favcolor.TabIndex = 452
+        Me.Panel_edit_favcolor.Visible = False
+        '
+        'Icon_editcolor_purple
+        '
+        Me.Icon_editcolor_purple.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_purple.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_purple
+        Me.Icon_editcolor_purple.Location = New System.Drawing.Point(130, 76)
+        Me.Icon_editcolor_purple.Name = "Icon_editcolor_purple"
+        Me.Icon_editcolor_purple.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_purple.TabIndex = 281
+        Me.Icon_editcolor_purple.TabStop = False
+        '
+        'Icon_editcolor_black
+        '
+        Me.Icon_editcolor_black.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_black.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_black
+        Me.Icon_editcolor_black.Location = New System.Drawing.Point(130, 104)
+        Me.Icon_editcolor_black.Name = "Icon_editcolor_black"
+        Me.Icon_editcolor_black.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_black.TabIndex = 280
+        Me.Icon_editcolor_black.TabStop = False
+        '
+        'Icon_editcolor_yellow
+        '
+        Me.Icon_editcolor_yellow.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_yellow.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_yellow
+        Me.Icon_editcolor_yellow.Location = New System.Drawing.Point(130, 20)
+        Me.Icon_editcolor_yellow.Name = "Icon_editcolor_yellow"
+        Me.Icon_editcolor_yellow.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_yellow.TabIndex = 279
+        Me.Icon_editcolor_yellow.TabStop = False
+        '
+        'Icon_editcolor_blue
+        '
+        Me.Icon_editcolor_blue.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_blue.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_blue
+        Me.Icon_editcolor_blue.Location = New System.Drawing.Point(130, 48)
+        Me.Icon_editcolor_blue.Name = "Icon_editcolor_blue"
+        Me.Icon_editcolor_blue.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_blue.TabIndex = 278
+        Me.Icon_editcolor_blue.TabStop = False
+        '
+        'Icon_editcolor_lightblue
+        '
+        Me.Icon_editcolor_lightblue.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_lightblue.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_lightblue
+        Me.Icon_editcolor_lightblue.Location = New System.Drawing.Point(16, 76)
+        Me.Icon_editcolor_lightblue.Name = "Icon_editcolor_lightblue"
+        Me.Icon_editcolor_lightblue.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_lightblue.TabIndex = 277
+        Me.Icon_editcolor_lightblue.TabStop = False
+        '
+        'Icon_editcolor_brown
+        '
+        Me.Icon_editcolor_brown.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_brown.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_brown
+        Me.Icon_editcolor_brown.Location = New System.Drawing.Point(16, 104)
+        Me.Icon_editcolor_brown.Name = "Icon_editcolor_brown"
+        Me.Icon_editcolor_brown.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_brown.TabIndex = 276
+        Me.Icon_editcolor_brown.TabStop = False
+        '
+        'Icon_editcolor_red
+        '
+        Me.Icon_editcolor_red.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_red.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_red
+        Me.Icon_editcolor_red.Location = New System.Drawing.Point(16, 20)
+        Me.Icon_editcolor_red.Name = "Icon_editcolor_red"
+        Me.Icon_editcolor_red.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_red.TabIndex = 275
+        Me.Icon_editcolor_red.TabStop = False
+        '
+        'Icon_editcolor_lightgreen
+        '
+        Me.Icon_editcolor_lightgreen.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_lightgreen.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_lightgreen
+        Me.Icon_editcolor_lightgreen.Location = New System.Drawing.Point(16, 48)
+        Me.Icon_editcolor_lightgreen.Name = "Icon_editcolor_lightgreen"
+        Me.Icon_editcolor_lightgreen.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_lightgreen.TabIndex = 274
+        Me.Icon_editcolor_lightgreen.TabStop = False
+        '
+        'Icon_editcolor_pink
+        '
+        Me.Icon_editcolor_pink.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_pink.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_pink
+        Me.Icon_editcolor_pink.Location = New System.Drawing.Point(73, 76)
+        Me.Icon_editcolor_pink.Name = "Icon_editcolor_pink"
+        Me.Icon_editcolor_pink.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_pink.TabIndex = 273
+        Me.Icon_editcolor_pink.TabStop = False
+        '
+        'Icon_editcolor_white
+        '
+        Me.Icon_editcolor_white.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_white.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_white
+        Me.Icon_editcolor_white.Location = New System.Drawing.Point(73, 104)
+        Me.Icon_editcolor_white.Name = "Icon_editcolor_white"
+        Me.Icon_editcolor_white.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_white.TabIndex = 272
+        Me.Icon_editcolor_white.TabStop = False
+        '
+        'Icon_editcolor_orange
+        '
+        Me.Icon_editcolor_orange.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_orange.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_orange
+        Me.Icon_editcolor_orange.Location = New System.Drawing.Point(73, 20)
+        Me.Icon_editcolor_orange.Name = "Icon_editcolor_orange"
+        Me.Icon_editcolor_orange.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_orange.TabIndex = 271
+        Me.Icon_editcolor_orange.TabStop = False
+        '
+        'Icon_editcolor_green
+        '
+        Me.Icon_editcolor_green.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_green.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_favcolor_green
+        Me.Icon_editcolor_green.Location = New System.Drawing.Point(73, 48)
+        Me.Icon_editcolor_green.Name = "Icon_editcolor_green"
+        Me.Icon_editcolor_green.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_green.TabIndex = 270
+        Me.Icon_editcolor_green.TabStop = False
+        '
+        'valu_lastmii
+        '
+        Me.valu_lastmii.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lastmii.Location = New System.Drawing.Point(246, 170)
+        Me.valu_lastmii.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_lastmii.Name = "valu_lastmii"
+        Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
+        Me.valu_lastmii.TabIndex = 453
+        Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastmii.Visible = False
+        '
+        'Icon_miidetected
+        '
+        Me.Icon_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_miidetected.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_miidetected.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Icon_miidetected.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.Icon_miidetected.Location = New System.Drawing.Point(246, 156)
+        Me.Icon_miidetected.Name = "Icon_miidetected"
+        Me.Icon_miidetected.Size = New System.Drawing.Size(30, 30)
+        Me.Icon_miidetected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_miidetected.TabIndex = 455
+        Me.Icon_miidetected.TabStop = False
+        '
+        'Text_miidetected
+        '
+        Me.Text_miidetected.AutoSize = True
+        Me.Text_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Text_miidetected.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_miidetected.Location = New System.Drawing.Point(279, 163)
+        Me.Text_miidetected.Name = "Text_miidetected"
+        Me.Text_miidetected.Size = New System.Drawing.Size(33, 16)
+        Me.Text_miidetected.TabIndex = 454
+        Me.Text_miidetected.Text = "X  0"
+        '
         'TLSE_miiprofile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_miiprofilebody
-        Me.ClientSize = New System.Drawing.Size(800, 606)
+        Me.ClientSize = New System.Drawing.Size(800, 566)
+        Me.Controls.Add(Me.valu_lastmii)
+        Me.Controls.Add(Me.Icon_miidetected)
+        Me.Controls.Add(Me.Text_miidetected)
+        Me.Controls.Add(Me.Panel_edit_favcolor)
+        Me.Controls.Add(Me.Binary_gender)
+        Me.Controls.Add(Me.Binary_gd_unknow)
+        Me.Controls.Add(Me.ConvertB_gender)
+        Me.Controls.Add(Me.valu_gender)
+        Me.Controls.Add(Me.Binary_fc_unknow2)
+        Me.Controls.Add(Me.Binary_favcolor)
+        Me.Controls.Add(Me.Binary_fc_unknow1)
+        Me.Controls.Add(Me.ConvertB_favcolor)
+        Me.Controls.Add(Me.valu_favcolor)
         Me.Controls.Add(Me.Binary_copying)
         Me.Controls.Add(Me.Binary_cp_unknow)
         Me.Controls.Add(Me.ConvertB_copying)
@@ -2557,6 +2881,23 @@ Partial Class TLSE_miiprofile
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_gender, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_edit_favcolor.ResumeLayout(False)
+        CType(Me.Icon_editcolor_purple, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_black, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_yellow, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_blue, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_lightblue, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_brown, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_red, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_lightgreen, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_pink, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_white, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_orange, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_editcolor_green, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2739,4 +3080,29 @@ Partial Class TLSE_miiprofile
     Friend WithEvents Binary_cp_unknow As TextBox
     Friend WithEvents ConvertB_copying As TextBox
     Friend WithEvents valu_copying As NumericUpDown
+    Friend WithEvents Binary_fc_unknow2 As TextBox
+    Friend WithEvents Binary_favcolor As TextBox
+    Friend WithEvents Binary_fc_unknow1 As TextBox
+    Friend WithEvents ConvertB_favcolor As TextBox
+    Friend WithEvents valu_favcolor As NumericUpDown
+    Friend WithEvents Binary_gender As TextBox
+    Friend WithEvents Binary_gd_unknow As TextBox
+    Friend WithEvents ConvertB_gender As TextBox
+    Friend WithEvents valu_gender As NumericUpDown
+    Friend WithEvents Panel_edit_favcolor As Panel
+    Friend WithEvents Icon_editcolor_purple As PictureBox
+    Friend WithEvents Icon_editcolor_black As PictureBox
+    Friend WithEvents Icon_editcolor_yellow As PictureBox
+    Friend WithEvents Icon_editcolor_blue As PictureBox
+    Friend WithEvents Icon_editcolor_lightblue As PictureBox
+    Friend WithEvents Icon_editcolor_brown As PictureBox
+    Friend WithEvents Icon_editcolor_red As PictureBox
+    Friend WithEvents Icon_editcolor_lightgreen As PictureBox
+    Friend WithEvents Icon_editcolor_pink As PictureBox
+    Friend WithEvents Icon_editcolor_white As PictureBox
+    Friend WithEvents Icon_editcolor_orange As PictureBox
+    Friend WithEvents Icon_editcolor_green As PictureBox
+    Friend WithEvents valu_lastmii As NumericUpDown
+    Friend WithEvents Icon_miidetected As PictureBox
+    Friend WithEvents Text_miidetected As Label
 End Class

@@ -701,7 +701,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_appareance
         '
-        Me.Text_menu_appareance.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_appareance.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_appareance.ForeColor = System.Drawing.Color.White
         Me.Text_menu_appareance.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_appareance.Name = "Text_menu_appareance"

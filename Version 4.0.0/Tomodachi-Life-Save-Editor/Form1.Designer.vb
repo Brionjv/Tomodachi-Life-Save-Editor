@@ -120,14 +120,6 @@ Partial Class TL_SaveEditor
         Me.Panel_islandaddress = New System.Windows.Forms.Panel()
         Me.Text_islandaddress = New System.Windows.Forms.TextBox()
         Me.valu_lastmii = New System.Windows.Forms.NumericUpDown()
-        Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
-        Me.Panel_spesymb_islandname_cancel = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_islandname_cancel = New System.Windows.Forms.Label()
-        Me.Panel_spesymb_islandname_add = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_add_islandname_n = New System.Windows.Forms.Label()
-        Me.Text_spesymb_add_islandname_pn = New System.Windows.Forms.Label()
-        Me.Select_spesymb_islandname = New System.Windows.Forms.ComboBox()
         Me.Warning_islandname = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_pronun_island = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_islandname = New System.Windows.Forms.PictureBox()
@@ -262,6 +254,14 @@ Partial Class TL_SaveEditor
         Me.Icon_cafe = New System.Windows.Forms.PictureBox()
         Me.Icon_broc = New System.Windows.Forms.PictureBox()
         Me.Icon_appart = New System.Windows.Forms.PictureBox()
+        Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_islandname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_islandname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_islandname = New System.Windows.Forms.ComboBox()
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
         Me.Panel_settings = New System.Windows.Forms.Panel()
@@ -1870,9 +1870,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_islandaddress.SuspendLayout
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_addsymb_islandname.SuspendLayout
-        Me.Panel_spesymb_islandname_cancel.SuspendLayout
-        Me.Panel_spesymb_islandname_add.SuspendLayout
         CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1992,6 +1989,9 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_addsymb_islandname.SuspendLayout
+        Me.Panel_spesymb_islandname_cancel.SuspendLayout
+        Me.Panel_spesymb_islandname_add.SuspendLayout
         Me.Panel_description.SuspendLayout
         Me.Panel_settings.SuspendLayout
         Me.TabControl_settings.SuspendLayout
@@ -3949,113 +3949,6 @@ Partial Class TL_SaveEditor
         Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_lastmii.Visible = False
         '
-        'Panel_addsymb_islandname
-        '
-        Me.Panel_addsymb_islandname.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_addsymb_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
-        Me.Panel_addsymb_islandname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_addsymb_islandname.Controls.Add(Me.Text_spesymb_islandname)
-        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_cancel)
-        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_add)
-        Me.Panel_addsymb_islandname.Controls.Add(Me.Select_spesymb_islandname)
-        Me.Panel_addsymb_islandname.Location = New System.Drawing.Point(26, 27)
-        Me.Panel_addsymb_islandname.Name = "Panel_addsymb_islandname"
-        Me.Panel_addsymb_islandname.Size = New System.Drawing.Size(201, 46)
-        Me.Panel_addsymb_islandname.TabIndex = 92
-        Me.Panel_addsymb_islandname.Visible = False
-        '
-        'Text_spesymb_islandname
-        '
-        Me.Text_spesymb_islandname.AutoSize = True
-        Me.Text_spesymb_islandname.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_islandname.Location = New System.Drawing.Point(18, 5)
-        Me.Text_spesymb_islandname.Name = "Text_spesymb_islandname"
-        Me.Text_spesymb_islandname.Size = New System.Drawing.Size(14, 13)
-        Me.Text_spesymb_islandname.TabIndex = 93
-        Me.Text_spesymb_islandname.Text = "T"
-        Me.Text_spesymb_islandname.Visible = False
-        '
-        'Panel_spesymb_islandname_cancel
-        '
-        Me.Panel_spesymb_islandname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Panel_spesymb_islandname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_spesymb_islandname_cancel.Controls.Add(Me.Text_spesymb_islandname_cancel)
-        Me.Panel_spesymb_islandname_cancel.Location = New System.Drawing.Point(110, 23)
-        Me.Panel_spesymb_islandname_cancel.Name = "Panel_spesymb_islandname_cancel"
-        Me.Panel_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
-        Me.Panel_spesymb_islandname_cancel.TabIndex = 94
-        '
-        'Text_spesymb_islandname_cancel
-        '
-        Me.Text_spesymb_islandname_cancel.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_islandname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_islandname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_islandname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_islandname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_islandname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_islandname_cancel.ImageKey = "(aucun)"
-        Me.Text_spesymb_islandname_cancel.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_islandname_cancel.Name = "Text_spesymb_islandname_cancel"
-        Me.Text_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_islandname_cancel.TabIndex = 5
-        Me.Text_spesymb_islandname_cancel.Text = "Cancel"
-        Me.Text_spesymb_islandname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel_spesymb_islandname_add
-        '
-        Me.Panel_spesymb_islandname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Panel_spesymb_islandname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_n)
-        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_pn)
-        Me.Panel_spesymb_islandname_add.Location = New System.Drawing.Point(12, 23)
-        Me.Panel_spesymb_islandname_add.Name = "Panel_spesymb_islandname_add"
-        Me.Panel_spesymb_islandname_add.Size = New System.Drawing.Size(78, 18)
-        Me.Panel_spesymb_islandname_add.TabIndex = 93
-        '
-        'Text_spesymb_add_islandname_n
-        '
-        Me.Text_spesymb_add_islandname_n.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_islandname_n.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_islandname_n.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_islandname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_islandname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_islandname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_islandname_n.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_islandname_n.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_islandname_n.Name = "Text_spesymb_add_islandname_n"
-        Me.Text_spesymb_add_islandname_n.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_islandname_n.TabIndex = 3
-        Me.Text_spesymb_add_islandname_n.Text = "Add"
-        Me.Text_spesymb_add_islandname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Text_spesymb_add_islandname_pn
-        '
-        Me.Text_spesymb_add_islandname_pn.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_islandname_pn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_islandname_pn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_islandname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_islandname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_islandname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_islandname_pn.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_islandname_pn.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_islandname_pn.Name = "Text_spesymb_add_islandname_pn"
-        Me.Text_spesymb_add_islandname_pn.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_islandname_pn.TabIndex = 4
-        Me.Text_spesymb_add_islandname_pn.Text = "Add"
-        Me.Text_spesymb_add_islandname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Select_spesymb_islandname
-        '
-        Me.Select_spesymb_islandname.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Select_spesymb_islandname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_spesymb_islandname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_spesymb_islandname.ItemHeight = 13
-        Me.Select_spesymb_islandname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
-        Me.Select_spesymb_islandname.Location = New System.Drawing.Point(11, 1)
-        Me.Select_spesymb_islandname.Name = "Select_spesymb_islandname"
-        Me.Select_spesymb_islandname.Size = New System.Drawing.Size(178, 21)
-        Me.Select_spesymb_islandname.TabIndex = 0
-        '
         'Warning_islandname
         '
         Me.Warning_islandname.BackColor = System.Drawing.Color.Transparent
@@ -5556,6 +5449,113 @@ Partial Class TL_SaveEditor
         Me.Icon_appart.Size = New System.Drawing.Size(65, 59)
         Me.Icon_appart.TabIndex = 1
         Me.Icon_appart.TabStop = False
+        '
+        'Panel_addsymb_islandname
+        '
+        Me.Panel_addsymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_islandname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Text_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_cancel)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_add)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Select_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Location = New System.Drawing.Point(26, 27)
+        Me.Panel_addsymb_islandname.Name = "Panel_addsymb_islandname"
+        Me.Panel_addsymb_islandname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_islandname.TabIndex = 92
+        Me.Panel_addsymb_islandname.Visible = False
+        '
+        'Text_spesymb_islandname
+        '
+        Me.Text_spesymb_islandname.AutoSize = True
+        Me.Text_spesymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_islandname.Name = "Text_spesymb_islandname"
+        Me.Text_spesymb_islandname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_islandname.TabIndex = 93
+        Me.Text_spesymb_islandname.Text = "T"
+        Me.Text_spesymb_islandname.Visible = False
+        '
+        'Panel_spesymb_islandname_cancel
+        '
+        Me.Panel_spesymb_islandname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_cancel.Controls.Add(Me.Text_spesymb_islandname_cancel)
+        Me.Panel_spesymb_islandname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_islandname_cancel.Name = "Panel_spesymb_islandname_cancel"
+        Me.Panel_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_cancel.TabIndex = 94
+        '
+        'Text_spesymb_islandname_cancel
+        '
+        Me.Text_spesymb_islandname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_islandname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_islandname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_islandname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_islandname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_islandname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_islandname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_islandname_cancel.Name = "Text_spesymb_islandname_cancel"
+        Me.Text_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_islandname_cancel.TabIndex = 5
+        Me.Text_spesymb_islandname_cancel.Text = "Cancel"
+        Me.Text_spesymb_islandname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_spesymb_islandname_add
+        '
+        Me.Panel_spesymb_islandname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_n)
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_pn)
+        Me.Panel_spesymb_islandname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_islandname_add.Name = "Panel_spesymb_islandname_add"
+        Me.Panel_spesymb_islandname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_add.TabIndex = 93
+        '
+        'Text_spesymb_add_islandname_n
+        '
+        Me.Text_spesymb_add_islandname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_n.Name = "Text_spesymb_add_islandname_n"
+        Me.Text_spesymb_add_islandname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_n.TabIndex = 3
+        Me.Text_spesymb_add_islandname_n.Text = "Add"
+        Me.Text_spesymb_add_islandname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_islandname_pn
+        '
+        Me.Text_spesymb_add_islandname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_pn.Name = "Text_spesymb_add_islandname_pn"
+        Me.Text_spesymb_add_islandname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_pn.TabIndex = 4
+        Me.Text_spesymb_add_islandname_pn.Text = "Add"
+        Me.Text_spesymb_add_islandname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spesymb_islandname
+        '
+        Me.Select_spesymb_islandname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_islandname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_islandname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_islandname.ItemHeight = 13
+        Me.Select_spesymb_islandname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_islandname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_islandname.Name = "Select_spesymb_islandname"
+        Me.Select_spesymb_islandname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_islandname.TabIndex = 0
         '
         'Panel_description
         '
@@ -8224,7 +8224,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_white)
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_orange)
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_green)
-        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(346, 226)
+        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(460, 310)
         Me.Panel_edit_favcolor.Name = "Panel_edit_favcolor"
         Me.Panel_edit_favcolor.Size = New System.Drawing.Size(201, 152)
         Me.Panel_edit_favcolor.TabIndex = 318
@@ -25131,10 +25131,6 @@ Partial Class TL_SaveEditor
         Me.Panel_islandaddress.ResumeLayout(False)
         Me.Panel_islandaddress.PerformLayout
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel_addsymb_islandname.ResumeLayout(False)
-        Me.Panel_addsymb_islandname.PerformLayout
-        Me.Panel_spesymb_islandname_cancel.ResumeLayout(False)
-        Me.Panel_spesymb_islandname_add.ResumeLayout(False)
         CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).EndInit
@@ -25256,6 +25252,10 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_addsymb_islandname.ResumeLayout(False)
+        Me.Panel_addsymb_islandname.PerformLayout
+        Me.Panel_spesymb_islandname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_islandname_add.ResumeLayout(False)
         Me.Panel_description.ResumeLayout(False)
         Me.Panel_settings.ResumeLayout(False)
         Me.TabControl_settings.ResumeLayout(False)
