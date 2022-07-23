@@ -166,7 +166,7 @@ Partial Class TLSE_miiprofile
         Me.Select_spesymb_creator = New System.Windows.Forms.ComboBox()
         Me.Addsymbol_creator = New System.Windows.Forms.PictureBox()
         Me.PictureBox36 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.Warning_miisysid = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel47 = New System.Windows.Forms.Panel()
         Me.Text_MiisysID = New System.Windows.Forms.TextBox()
@@ -188,9 +188,9 @@ Partial Class TLSE_miiprofile
         Me.Icon_selectmii = New System.Windows.Forms.PictureBox()
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Warning_tlsysid = New System.Windows.Forms.PictureBox()
+        Me.Warning_originisld = New System.Windows.Forms.PictureBox()
+        Me.Warning_actualisld = New System.Windows.Forms.PictureBox()
         Me.Binary_sharing = New System.Windows.Forms.TextBox()
         Me.Binary_faceshap = New System.Windows.Forms.TextBox()
         Me.Binary_skincolor = New System.Windows.Forms.TextBox()
@@ -307,7 +307,7 @@ Partial Class TLSE_miiprofile
         Me.Panel_spesymb_creator_add.SuspendLayout()
         CType(Me.Addsymbol_creator, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_miisysid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel47.SuspendLayout()
         CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel46.SuspendLayout()
@@ -319,9 +319,9 @@ Partial Class TLSE_miiprofile
         Me.Panel9.SuspendLayout()
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_description.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_tlsysid, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_originisld, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_actualisld, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2042,17 +2042,17 @@ Partial Class TLSE_miiprofile
         Me.PictureBox36.TabStop = False
         Me.PictureBox36.Visible = False
         '
-        'PictureBox31
+        'Warning_miisysid
         '
-        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox31.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox31.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
-        Me.PictureBox31.Location = New System.Drawing.Point(405, 333)
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(22, 24)
-        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox31.TabIndex = 399
-        Me.PictureBox31.TabStop = False
+        Me.Warning_miisysid.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_miisysid.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_miisysid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_miisysid.Location = New System.Drawing.Point(405, 333)
+        Me.Warning_miisysid.Name = "Warning_miisysid"
+        Me.Warning_miisysid.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_miisysid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_miisysid.TabIndex = 399
+        Me.Warning_miisysid.TabStop = False
         '
         'Label7
         '
@@ -2275,41 +2275,41 @@ Partial Class TLSE_miiprofile
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox1
+        'Warning_tlsysid
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
-        Me.PictureBox1.Location = New System.Drawing.Point(577, 335)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(22, 24)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 415
-        Me.PictureBox1.TabStop = False
+        Me.Warning_tlsysid.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_tlsysid.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_tlsysid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_tlsysid.Location = New System.Drawing.Point(577, 335)
+        Me.Warning_tlsysid.Name = "Warning_tlsysid"
+        Me.Warning_tlsysid.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_tlsysid.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_tlsysid.TabIndex = 415
+        Me.Warning_tlsysid.TabStop = False
         '
-        'PictureBox2
+        'Warning_originisld
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
-        Me.PictureBox2.Location = New System.Drawing.Point(481, 400)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(22, 24)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 416
-        Me.PictureBox2.TabStop = False
+        Me.Warning_originisld.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_originisld.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_originisld.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_originisld.Location = New System.Drawing.Point(481, 400)
+        Me.Warning_originisld.Name = "Warning_originisld"
+        Me.Warning_originisld.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_originisld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_originisld.TabIndex = 416
+        Me.Warning_originisld.TabStop = False
         '
-        'PictureBox3
+        'Warning_actualisld
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
-        Me.PictureBox3.Location = New System.Drawing.Point(728, 400)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(22, 24)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox3.TabIndex = 417
-        Me.PictureBox3.TabStop = False
+        Me.Warning_actualisld.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_actualisld.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_actualisld.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_actualisld.Location = New System.Drawing.Point(728, 400)
+        Me.Warning_actualisld.Name = "Warning_actualisld"
+        Me.Warning_actualisld.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_actualisld.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_actualisld.TabIndex = 417
+        Me.Warning_actualisld.TabStop = False
         '
         'Binary_sharing
         '
@@ -2318,6 +2318,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_sharing.Name = "Binary_sharing"
         Me.Binary_sharing.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sharing.TabIndex = 429
+        Me.Binary_sharing.Visible = False
         '
         'Binary_faceshap
         '
@@ -2326,6 +2327,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_faceshap.Name = "Binary_faceshap"
         Me.Binary_faceshap.Size = New System.Drawing.Size(68, 13)
         Me.Binary_faceshap.TabIndex = 427
+        Me.Binary_faceshap.Visible = False
         '
         'Binary_skincolor
         '
@@ -2334,6 +2336,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_skincolor.Name = "Binary_skincolor"
         Me.Binary_skincolor.Size = New System.Drawing.Size(31, 13)
         Me.Binary_skincolor.TabIndex = 426
+        Me.Binary_skincolor.Visible = False
         '
         'ConvertB_sharing
         '
@@ -2342,6 +2345,7 @@ Partial Class TLSE_miiprofile
         Me.ConvertB_sharing.Name = "ConvertB_sharing"
         Me.ConvertB_sharing.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_sharing.TabIndex = 425
+        Me.ConvertB_sharing.Visible = False
         '
         'valu_sharing
         '
@@ -2354,6 +2358,7 @@ Partial Class TLSE_miiprofile
         Me.valu_sharing.Size = New System.Drawing.Size(58, 16)
         Me.valu_sharing.TabIndex = 424
         Me.valu_sharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sharing.Visible = False
         '
         'Binary_copying
         '
@@ -2362,6 +2367,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_copying.Name = "Binary_copying"
         Me.Binary_copying.Size = New System.Drawing.Size(31, 13)
         Me.Binary_copying.TabIndex = 435
+        Me.Binary_copying.Visible = False
         '
         'Binary_cp_unknow
         '
@@ -2370,6 +2376,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_cp_unknow.Name = "Binary_cp_unknow"
         Me.Binary_cp_unknow.Size = New System.Drawing.Size(105, 13)
         Me.Binary_cp_unknow.TabIndex = 432
+        Me.Binary_cp_unknow.Visible = False
         '
         'ConvertB_copying
         '
@@ -2378,6 +2385,7 @@ Partial Class TLSE_miiprofile
         Me.ConvertB_copying.Name = "ConvertB_copying"
         Me.ConvertB_copying.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_copying.TabIndex = 431
+        Me.ConvertB_copying.Visible = False
         '
         'valu_copying
         '
@@ -2390,6 +2398,7 @@ Partial Class TLSE_miiprofile
         Me.valu_copying.Size = New System.Drawing.Size(58, 16)
         Me.valu_copying.TabIndex = 430
         Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_copying.Visible = False
         '
         'Binary_fc_unknow2
         '
@@ -2398,6 +2407,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_fc_unknow2.Name = "Binary_fc_unknow2"
         Me.Binary_fc_unknow2.Size = New System.Drawing.Size(31, 13)
         Me.Binary_fc_unknow2.TabIndex = 441
+        Me.Binary_fc_unknow2.Visible = False
         '
         'Binary_favcolor
         '
@@ -2406,6 +2416,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_favcolor.Name = "Binary_favcolor"
         Me.Binary_favcolor.Size = New System.Drawing.Size(68, 13)
         Me.Binary_favcolor.TabIndex = 439
+        Me.Binary_favcolor.Visible = False
         '
         'Binary_fc_unknow1
         '
@@ -2414,6 +2425,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_fc_unknow1.Name = "Binary_fc_unknow1"
         Me.Binary_fc_unknow1.Size = New System.Drawing.Size(31, 13)
         Me.Binary_fc_unknow1.TabIndex = 438
+        Me.Binary_fc_unknow1.Visible = False
         '
         'ConvertB_favcolor
         '
@@ -2422,6 +2434,7 @@ Partial Class TLSE_miiprofile
         Me.ConvertB_favcolor.Name = "ConvertB_favcolor"
         Me.ConvertB_favcolor.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_favcolor.TabIndex = 437
+        Me.ConvertB_favcolor.Visible = False
         '
         'valu_favcolor
         '
@@ -2434,6 +2447,7 @@ Partial Class TLSE_miiprofile
         Me.valu_favcolor.Size = New System.Drawing.Size(58, 16)
         Me.valu_favcolor.TabIndex = 436
         Me.valu_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_favcolor.Visible = False
         '
         'Binary_gender
         '
@@ -2442,6 +2456,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_gender.Name = "Binary_gender"
         Me.Binary_gender.Size = New System.Drawing.Size(31, 13)
         Me.Binary_gender.TabIndex = 451
+        Me.Binary_gender.Visible = False
         '
         'Binary_gd_unknow
         '
@@ -2450,6 +2465,7 @@ Partial Class TLSE_miiprofile
         Me.Binary_gd_unknow.Name = "Binary_gd_unknow"
         Me.Binary_gd_unknow.Size = New System.Drawing.Size(105, 13)
         Me.Binary_gd_unknow.TabIndex = 448
+        Me.Binary_gd_unknow.Visible = False
         '
         'ConvertB_gender
         '
@@ -2458,6 +2474,7 @@ Partial Class TLSE_miiprofile
         Me.ConvertB_gender.Name = "ConvertB_gender"
         Me.ConvertB_gender.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_gender.TabIndex = 447
+        Me.ConvertB_gender.Visible = False
         '
         'valu_gender
         '
@@ -2465,11 +2482,12 @@ Partial Class TLSE_miiprofile
         Me.valu_gender.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_gender.Hexadecimal = True
         Me.valu_gender.Location = New System.Drawing.Point(467, 474)
-        Me.valu_gender.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_gender.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_gender.Name = "valu_gender"
         Me.valu_gender.Size = New System.Drawing.Size(58, 16)
         Me.valu_gender.TabIndex = 446
         Me.valu_gender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_gender.Visible = False
         '
         'Panel_edit_favcolor
         '
@@ -2653,10 +2671,10 @@ Partial Class TLSE_miiprofile
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_miiprofilebody
         Me.ClientSize = New System.Drawing.Size(800, 566)
+        Me.Controls.Add(Me.Panel_edit_favcolor)
         Me.Controls.Add(Me.valu_lastmii)
         Me.Controls.Add(Me.Icon_miidetected)
         Me.Controls.Add(Me.Text_miidetected)
-        Me.Controls.Add(Me.Panel_edit_favcolor)
         Me.Controls.Add(Me.Binary_gender)
         Me.Controls.Add(Me.Binary_gd_unknow)
         Me.Controls.Add(Me.ConvertB_gender)
@@ -2675,9 +2693,9 @@ Partial Class TLSE_miiprofile
         Me.Controls.Add(Me.Binary_skincolor)
         Me.Controls.Add(Me.ConvertB_sharing)
         Me.Controls.Add(Me.valu_sharing)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Warning_actualisld)
+        Me.Controls.Add(Me.Warning_originisld)
+        Me.Controls.Add(Me.Warning_tlsysid)
         Me.Controls.Add(Me.Panel_addsymb_firstname)
         Me.Controls.Add(Me.Panel_addsymb_lastname)
         Me.Controls.Add(Me.Panel_addsymb_nickname)
@@ -2694,7 +2712,7 @@ Partial Class TLSE_miiprofile
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Panel46)
         Me.Controls.Add(Me.PictureBox36)
-        Me.Controls.Add(Me.PictureBox31)
+        Me.Controls.Add(Me.Warning_miisysid)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Panel47)
         Me.Controls.Add(Me.Addsymbol_creator)
@@ -2860,7 +2878,7 @@ Partial Class TLSE_miiprofile
         Me.Panel_spesymb_creator_add.ResumeLayout(False)
         CType(Me.Addsymbol_creator, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_miisysid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel47.ResumeLayout(False)
         Me.Panel47.PerformLayout()
         CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2876,9 +2894,9 @@ Partial Class TLSE_miiprofile
         Me.Panel9.ResumeLayout(False)
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_description.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_tlsysid, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_originisld, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_actualisld, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3046,7 +3064,7 @@ Partial Class TLSE_miiprofile
     Friend WithEvents Select_spesymb_creator As ComboBox
     Friend WithEvents Addsymbol_creator As PictureBox
     Friend WithEvents PictureBox36 As PictureBox
-    Friend WithEvents PictureBox31 As PictureBox
+    Friend WithEvents Warning_miisysid As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Panel47 As Panel
     Friend WithEvents Text_MiisysID As TextBox
@@ -3068,9 +3086,9 @@ Partial Class TLSE_miiprofile
     Friend WithEvents Icon_selectmii As PictureBox
     Friend WithEvents Panel_description As Panel
     Friend WithEvents Text_description As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Warning_tlsysid As PictureBox
+    Friend WithEvents Warning_originisld As PictureBox
+    Friend WithEvents Warning_actualisld As PictureBox
     Friend WithEvents Binary_sharing As TextBox
     Friend WithEvents Binary_faceshap As TextBox
     Friend WithEvents Binary_skincolor As TextBox

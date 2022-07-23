@@ -1530,9 +1530,9 @@ Public Class TLSE_miiprofile
     Private Sub valu_favcolor_ValueChanged(sender As Object, e As EventArgs) Handles valu_favcolor.ValueChanged
         Try
             ConvertB_favcolor.Text = Convert.ToString(Convert.ToUInt32(valu_favcolor.Value), 2).PadLeft(8, "0")
-            Binary_fc_unknow1.Text = ConvertB_favcolor.Text.Substring(0, 1)
-            Binary_favcolor.Text = ConvertB_favcolor.Text.Substring(1, 4)
-            Binary_fc_unknow2.Text = ConvertB_favcolor.Text.Substring(5, 3)
+            Binary_fc_unknow1.Text = ConvertB_favcolor.Text.Substring(0, 2)
+            Binary_favcolor.Text = ConvertB_favcolor.Text.Substring(2, 4)
+            Binary_fc_unknow2.Text = ConvertB_favcolor.Text.Substring(5, 2)
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert favorite color to binary"
             TLSE_dialog.ShowDialog()
@@ -5857,5 +5857,116 @@ Public Class TLSE_miiprofile
 
     Private Sub TLSE_miiprofile_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         DetectMiiregistered()
+    End Sub
+
+    Private Sub Warning_actualisld_Click(sender As Object, e As EventArgs) Handles Warning_actualisld.Click
+        TLSE_dialog.Text_TLSE_dialog.Text = "Edit in hexadecimal and enter max characters"
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub Warning_tlsysid_Click(sender As Object, e As EventArgs) Handles Warning_tlsysid.Click
+        TLSE_dialog.Text_TLSE_dialog.Text = "Edit in hexadecimal and enter max characters"
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub Warning_originisld_Click(sender As Object, e As EventArgs) Handles Warning_originisld.Click
+        TLSE_dialog.Text_TLSE_dialog.Text = "Edit in hexadecimal and enter max characters"
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub Warning_miisysid_Click(sender As Object, e As EventArgs) Handles Warning_miisysid.Click
+        TLSE_dialog.Text_TLSE_dialog.Text = "Edit in hexadecimal and enter max characters"
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
+        Mergebinarycopying()
+        Mergebinaryfavcolor()
+        Mergebinarygender()
+        Mergebinarysharing()
+        Writemiiprofile()
+        If TLSE_logo_update.Visible = True Then
+            TLSE_hub.TLSE_logo_update.Visible = True
+        End If
+        TLSE_crcxmodem.Show()
+        Me.Close()
+    End Sub
+
+    Public Sub Writemiiprofile()
+        Try
+            Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            For i = 0 To 29
+                Writedata.Position = firstname + i
+                Writedata.WriteInt8(0)
+            Next
+            Writedata.Position = firstname
+            Writedata.WriteUnicodeString(Text_firstname.Text)
+            For i = 0 To 29
+                Writedata.Position = lastname + i
+                Writedata.WriteInt8(0)
+            Next
+            Writedata.Position = lastname
+            Writedata.WriteUnicodeString(Text_lastname.Text)
+            For i = 0 To 19
+                Writedata.Position = nickname + i
+                Writedata.WriteInt8(0)
+            Next
+            Writedata.Position = nickname
+            Writedata.WriteUnicodeString(Text_nickname.Text)
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                For i = 0 To 39
+                    Writedata.Position = pronunnickname + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = pronunnickname
+                Writedata.WriteUnicodeString(Text_pronun_nickname.Text)
+                For i = 0 To 59
+                    Writedata.Position = pronunfirstname + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = pronunfirstname
+                Writedata.WriteUnicodeString(Text_pronun_firstname.Text)
+                For i = 0 To 59
+                    Writedata.Position = pronunlastname + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = pronunlastname
+                Writedata.WriteUnicodeString(Text_pronun_lastname.Text)
+            End If
+            For i = 0 To 19
+                Writedata.Position = creator + i
+                Writedata.WriteInt8(0)
+            Next
+            Writedata.Position = creator
+            Writedata.WriteUnicodeString(Text_creator.Text)
+            Writedata.Position = miisysid
+            Writedata.WriteHexString(Text_MiisysID.Text)
+            Writedata.Position = TLmiisysid
+            Writedata.WriteHexString(Text_TLMiisysID.Text)
+            Writedata.Position = originisland
+            Writedata.WriteHexString(Text_originisld.Text)
+            Writedata.Position = actualisland
+            Writedata.WriteHexString(Text_actualIsld.Text)
+            Writedata.Flush()
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = sharing
+            fs.WriteByte(valu_sharing.Value)
+            fs.Position = copying
+            fs.WriteByte(valu_copying.Value)
+            fs.Position = gender
+            fs.WriteByte(valu_gender.Value)
+            fs.Position = favcolor
+            fs.WriteByte(valu_favcolor.Value)
+            fs.Position = relationyou
+            fs.WriteByte(valu_relationyou.Value)
+            fs.Position = growkid
+            fs.WriteByte(valu_growkid.Value)
+            fs.Flush()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Mii profile has been successfully edited"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to edit mii profile"
+            TLSE_dialog.ShowDialog()
+        End Try
     End Sub
 End Class
