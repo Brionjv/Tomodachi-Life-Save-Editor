@@ -69,20 +69,9 @@ Public Class TLSE_hub
         Menu_babiesedit.BackgroundImage = My.Resources.bbl_babyedit
     End Sub
 
-    Private Sub Text_menu_datacreation_Click(sender As Object, e As EventArgs) Handles Text_menu_datacreation.Click
-
-    End Sub
-
-    Private Sub Text_menu_datacreation_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datacreation.MouseMove
-        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition_act
-    End Sub
-
-    Private Sub Text_menu_datacreation_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datacreation.MouseLeave
-        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition
-    End Sub
-
     Private Sub Text_menu_datasmanagement_Click(sender As Object, e As EventArgs) Handles Text_menu_datasmanagement.Click
-
+        Hidemenu()
+        TLSE_menu_datamanagement.Visible = True
     End Sub
 
     Private Sub Text_menu_datasmanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datasmanagement.MouseMove
@@ -182,6 +171,22 @@ Public Class TLSE_hub
         Menu_islandinfo.BackgroundImage = My.Resources.bbl_islandinfo
     End Sub
 
+    Private Sub Text_menu_dataislandranking_Click(sender As Object, e As EventArgs) Handles Text_menu_dataislandranking.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_dataislandranking.TLSE_logo_update.Visible = True
+        End If
+        TLSE_dataislandranking.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_dataislandranking_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_dataislandranking.MouseMove
+        Menu_dataislandranking.BackgroundImage = My.Resources.bbl_dataislandranking_act
+    End Sub
+
+    Private Sub Text_menu_dataislandranking_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_dataislandranking.MouseLeave
+        Menu_dataislandranking.BackgroundImage = My.Resources.bbl_dataislandranking
+    End Sub
+
     Private Sub Text_menu_islandsettings_Click(sender As Object, e As EventArgs) Handles Text_menu_islandsettings.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_islandsettings.TLSE_logo_update.Visible = True
@@ -279,6 +284,22 @@ Public Class TLSE_hub
 
     Private Sub Text_menu_repairsave_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_repairsave.MouseLeave
         Menu_repairsave.BackgroundImage = My.Resources.bbl_repairsave
+    End Sub
+
+    Private Sub Text_menu_creaislandranking_Click(sender As Object, e As EventArgs) Handles Text_menu_creaislandranking.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_creaislandranking.TLSE_logo_update.Visible = True
+        End If
+        TLSE_creaislandranking.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_creaislandranking_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_creaislandranking.MouseMove
+        Menu_creaislandranking.BackgroundImage = My.Resources.bbl_dataislandranking_act
+    End Sub
+
+    Private Sub Text_menu_creaislandranking_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_creaislandranking.MouseLeave
+        Menu_creaislandranking.BackgroundImage = My.Resources.bbl_dataislandranking
     End Sub
 
     Private Sub Text_menu_settings_Click(sender As Object, e As EventArgs) Handles Text_menu_settings.Click
@@ -431,6 +452,19 @@ Public Class TLSE_hub
         TLSE_menu.Visible = True
     End Sub
 
+    Private Sub Icon_menu_datamanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_datamanagement.MouseMove
+        Icon_menu_datamanagement.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_datamanagement_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_datamanagement.MouseLeave
+        Icon_menu_datamanagement.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Icon_menu_datamanagement_Click(sender As Object, e As EventArgs) Handles Icon_menu_datamanagement.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
     Private Sub Icon_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_itemsedit.Click
         Hidemenu()
         TLSE_menu.Visible = True
@@ -480,6 +514,32 @@ Public Class TLSE_hub
 
     Private Sub Icon_menu_miimanagement_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_miimanagement.MouseLeave
         Icon_menu_miimanagement.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Icon_menu_datacreation_Click(sender As Object, e As EventArgs) Handles Icon_menu_datacreation.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
+    Private Sub Icon_menu_datacreation_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_datacreation.MouseMove
+        Icon_menu_datacreation.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_datacreation_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_datacreation.MouseLeave
+        Icon_menu_datacreation.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Text_menu_datacreation_Click(sender As Object, e As EventArgs) Handles Text_menu_datacreation.Click
+        Hidemenu()
+        TLSE_menu_datacreation.Visible = True
+    End Sub
+
+    Private Sub Text_menu_datacreation_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datacreation.MouseMove
+        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition_act
+    End Sub
+
+    Private Sub Text_menu_datacreation_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datacreation.MouseLeave
+        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition
     End Sub
 
     Private Sub Icon_menu_travelersedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_travelersedit.Click
@@ -590,6 +650,7 @@ Public Class TLSE_hub
         TLSE_menu_travelersedit.Visible = False
         TLSE_menu_islandedit.Visible = False
         TLSE_menu_datamanagement.Visible = False
+        TLSE_menu_datacreation.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load

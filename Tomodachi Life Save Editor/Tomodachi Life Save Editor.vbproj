@@ -100,6 +100,18 @@
     <Compile Include="TLSE_crcxmodem.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_creaislandranking.Designer.vb">
+      <DependentUpon>TLSE_creaislandranking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_creaislandranking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLSE_dataislandranking.Designer.vb">
+      <DependentUpon>TLSE_dataislandranking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_dataislandranking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_interactions.Designer.vb">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </Compile>
@@ -260,6 +272,12 @@
     <EmbeddedResource Include="TLSE_crcxmodem.resx">
       <DependentUpon>TLSE_crcxmodem.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_creaislandranking.resx">
+      <DependentUpon>TLSE_creaislandranking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_dataislandranking.resx">
+      <DependentUpon>TLSE_dataislandranking.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_interactions.resx">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +437,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_datacreation.png" />
+    <None Include="Resources\tab_datacreation_base.png" />
+    <None Include="Resources\tab_datacreation.png" />
+    <None Include="Resources\icon_islandranking.png" />
+    <None Include="Resources\bg_datamanagement.png" />
+    <None Include="Resources\bbl_dataislandranking_act.png" />
+    <None Include="Resources\bbl_dataislandranking.png" />
     <None Include="Resources\icon_favcolor_yellow.png" />
     <None Include="Resources\icon_favcolor_white.png" />
     <None Include="Resources\icon_favcolor_red.png" />

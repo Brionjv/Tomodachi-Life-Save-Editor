@@ -160,11 +160,21 @@ Partial Class TLSE_hub
         Me.Menu_savefilesettings = New System.Windows.Forms.Panel()
         Me.Text_menu_savefilesettings = New System.Windows.Forms.Label()
         Me.TLSE_menu_datamanagement = New System.Windows.Forms.Panel()
+        Me.Menu_dataislandranking = New System.Windows.Forms.Panel()
+        Me.Text_menu_dataislandranking = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Icon_menu_datamanagement = New System.Windows.Forms.PictureBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Panel18 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_datamanagement = New System.Windows.Forms.Label()
+        Me.TLSE_menu_datacreation = New System.Windows.Forms.Panel()
+        Me.Menu_creaislandranking = New System.Windows.Forms.Panel()
+        Me.Text_menu_creaislandranking = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel6 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_datacreation = New System.Windows.Forms.PictureBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -247,9 +257,15 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit.SuspendLayout()
         Me.Menu_savefilesettings.SuspendLayout()
         Me.TLSE_menu_datamanagement.SuspendLayout()
+        Me.Menu_dataislandranking.SuspendLayout()
         Me.FlowLayoutPanel5.SuspendLayout()
         CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel18.SuspendLayout()
+        Me.TLSE_menu_datacreation.SuspendLayout()
+        Me.Menu_creaislandranking.SuspendLayout()
+        Me.FlowLayoutPanel6.SuspendLayout()
+        CType(Me.Icon_menu_datacreation, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel15.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -379,7 +395,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_datasmanagement
         '
-        Me.Text_menu_datasmanagement.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_datasmanagement.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_datasmanagement.ForeColor = System.Drawing.Color.White
         Me.Text_menu_datasmanagement.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_datasmanagement.Name = "Text_menu_datasmanagement"
@@ -399,7 +415,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_datacreation
         '
-        Me.Text_menu_datacreation.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_datacreation.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_datacreation.ForeColor = System.Drawing.Color.White
         Me.Text_menu_datacreation.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_datacreation.Name = "Text_menu_datacreation"
@@ -828,7 +844,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.0.3"
+        Me.TLSE_version.Text = "Version 5.0.4"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1736,12 +1752,34 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_datamanagement.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_datamanagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_datamanagement.Controls.Add(Me.Menu_dataislandranking)
         Me.TLSE_menu_datamanagement.Controls.Add(Me.FlowLayoutPanel5)
         Me.TLSE_menu_datamanagement.Location = New System.Drawing.Point(12, 81)
         Me.TLSE_menu_datamanagement.Name = "TLSE_menu_datamanagement"
         Me.TLSE_menu_datamanagement.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu_datamanagement.TabIndex = 40
         Me.TLSE_menu_datamanagement.Visible = False
+        '
+        'Menu_dataislandranking
+        '
+        Me.Menu_dataislandranking.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_dataislandranking
+        Me.Menu_dataislandranking.Controls.Add(Me.Text_menu_dataislandranking)
+        Me.Menu_dataislandranking.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_dataislandranking.Location = New System.Drawing.Point(303, 140)
+        Me.Menu_dataislandranking.Name = "Menu_dataislandranking"
+        Me.Menu_dataislandranking.Size = New System.Drawing.Size(148, 148)
+        Me.Menu_dataislandranking.TabIndex = 18
+        '
+        'Text_menu_dataislandranking
+        '
+        Me.Text_menu_dataislandranking.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_dataislandranking.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_dataislandranking.Location = New System.Drawing.Point(5, 5)
+        Me.Text_menu_dataislandranking.Name = "Text_menu_dataislandranking"
+        Me.Text_menu_dataislandranking.Size = New System.Drawing.Size(138, 138)
+        Me.Text_menu_dataislandranking.TabIndex = 2
+        Me.Text_menu_dataislandranking.Text = "Island Ranking" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Extract or restore Island ranking"
+        Me.Text_menu_dataislandranking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'FlowLayoutPanel5
         '
@@ -1793,6 +1831,89 @@ Partial Class TLSE_hub
         Me.Menuflow_text_datamanagement.Text = "Data management"
         Me.Menuflow_text_datamanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TLSE_menu_datacreation
+        '
+        Me.TLSE_menu_datacreation.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_datacreation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_datacreation.Controls.Add(Me.Menu_creaislandranking)
+        Me.TLSE_menu_datacreation.Controls.Add(Me.FlowLayoutPanel6)
+        Me.TLSE_menu_datacreation.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_datacreation.Name = "TLSE_menu_datacreation"
+        Me.TLSE_menu_datacreation.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_datacreation.TabIndex = 41
+        Me.TLSE_menu_datacreation.Visible = False
+        '
+        'Menu_creaislandranking
+        '
+        Me.Menu_creaislandranking.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_dataislandranking
+        Me.Menu_creaislandranking.Controls.Add(Me.Text_menu_creaislandranking)
+        Me.Menu_creaislandranking.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_creaislandranking.Location = New System.Drawing.Point(303, 140)
+        Me.Menu_creaislandranking.Name = "Menu_creaislandranking"
+        Me.Menu_creaislandranking.Size = New System.Drawing.Size(148, 148)
+        Me.Menu_creaislandranking.TabIndex = 18
+        '
+        'Text_menu_creaislandranking
+        '
+        Me.Text_menu_creaislandranking.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_creaislandranking.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_creaislandranking.Location = New System.Drawing.Point(5, 5)
+        Me.Text_menu_creaislandranking.Name = "Text_menu_creaislandranking"
+        Me.Text_menu_creaislandranking.Size = New System.Drawing.Size(138, 138)
+        Me.Text_menu_creaislandranking.TabIndex = 2
+        Me.Text_menu_creaislandranking.Text = "Island Ranking" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Create Island ranking files"
+        Me.Text_menu_creaislandranking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'FlowLayoutPanel6
+        '
+        Me.FlowLayoutPanel6.AutoSize = True
+        Me.FlowLayoutPanel6.Controls.Add(Me.Icon_menu_datacreation)
+        Me.FlowLayoutPanel6.Controls.Add(Me.Panel6)
+        Me.FlowLayoutPanel6.Controls.Add(Me.Panel15)
+        Me.FlowLayoutPanel6.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel6.Name = "FlowLayoutPanel6"
+        Me.FlowLayoutPanel6.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel6.TabIndex = 2
+        '
+        'Icon_menu_datacreation
+        '
+        Me.Icon_menu_datacreation.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_datacreation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_datacreation.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_datacreation.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_datacreation.Name = "Icon_menu_datacreation"
+        Me.Icon_menu_datacreation.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_datacreation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_datacreation.TabIndex = 42
+        Me.Icon_menu_datacreation.TabStop = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_datacreation_base
+        Me.Panel6.Location = New System.Drawing.Point(70, 3)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(45, 50)
+        Me.Panel6.TabIndex = 2
+        '
+        'Panel15
+        '
+        Me.Panel15.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_datacreation
+        Me.Panel15.Controls.Add(Me.Label2)
+        Me.Panel15.Location = New System.Drawing.Point(121, 3)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(120, 50)
+        Me.Panel15.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(20, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(80, 50)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Data creation"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1803,13 +1924,14 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu_datacreation)
+        Me.Controls.Add(Me.TLSE_menu_datamanagement)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_datamanagement)
-        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1910,9 +2032,16 @@ Partial Class TLSE_hub
         Me.Menu_savefilesettings.ResumeLayout(False)
         Me.TLSE_menu_datamanagement.ResumeLayout(False)
         Me.TLSE_menu_datamanagement.PerformLayout()
+        Me.Menu_dataislandranking.ResumeLayout(False)
         Me.FlowLayoutPanel5.ResumeLayout(False)
         CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel18.ResumeLayout(False)
+        Me.TLSE_menu_datacreation.ResumeLayout(False)
+        Me.TLSE_menu_datacreation.PerformLayout()
+        Me.Menu_creaislandranking.ResumeLayout(False)
+        Me.FlowLayoutPanel6.ResumeLayout(False)
+        CType(Me.Icon_menu_datacreation, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel15.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2057,4 +2186,14 @@ Partial Class TLSE_hub
     Friend WithEvents Text_menu_miiprofile As Label
     Friend WithEvents Menu_appareance As Panel
     Friend WithEvents Text_menu_appareance As Label
+    Friend WithEvents Menu_dataislandranking As Panel
+    Friend WithEvents Text_menu_dataislandranking As Label
+    Friend WithEvents TLSE_menu_datacreation As Panel
+    Friend WithEvents Menu_creaislandranking As Panel
+    Friend WithEvents Text_menu_creaislandranking As Label
+    Friend WithEvents FlowLayoutPanel6 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_datacreation As PictureBox
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents Label2 As Label
 End Class
