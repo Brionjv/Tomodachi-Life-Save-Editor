@@ -105,6 +105,7 @@ Public Class TLSE_islandinfo
         Filever_text.Text = TLSE_hub.Filever_text.Text
         savedataArc = TLSE_filepath.Text
         Savefileregion()
+        addsymbol()
     End Sub
 
     Private Sub Icon_problemsolved_Click(sender As Object, e As EventArgs) Handles Icon_problemsolved.Click
@@ -704,5 +705,12 @@ Public Class TLSE_islandinfo
         TLSE_hub.TLSE_menu.Visible = False
         TLSE_hub.TLSE_menu_islandedit.Visible = True
         Me.Close()
+    End Sub
+
+    Public Sub addsymbol()
+        If Setting_spesymb.Checked = True Then
+            Panel_bspesymb.Visible = True
+            Addsymbol_islandname.Visible = True
+        End If
     End Sub
 End Class

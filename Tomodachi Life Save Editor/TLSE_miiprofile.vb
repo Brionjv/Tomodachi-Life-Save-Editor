@@ -111,6 +111,7 @@ Public Class TLSE_miiprofile
         Filever_text.Text = TLSE_hub.Filever_text.Text
         savedataArc = TLSE_filepath.Text
         Readmiiname()
+        addsymbol()
     End Sub
 
     Private Sub Menuflow_text_itemsedition_Click(sender As Object, e As EventArgs) Handles Menuflow_text_itemsedition.Click
@@ -5968,5 +5969,15 @@ Public Class TLSE_miiprofile
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to edit mii profile"
             TLSE_dialog.ShowDialog()
         End Try
+    End Sub
+
+    Public Sub addsymbol()
+        If Setting_spesymb.Checked = True Then
+            Panel_bspesymb.Visible = True
+            Addsymbol_creator.Visible = True
+            Addsymbol_firstname.Visible = True
+            Addsymbol_lastname.Visible = True
+            Addsymbol_nickname.Visible = True
+        End If
     End Sub
 End Class

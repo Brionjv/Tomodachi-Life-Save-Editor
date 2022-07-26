@@ -437,6 +437,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_starisland.png" />
     <None Include="Resources\bg_datacreation.png" />
     <None Include="Resources\tab_datacreation_base.png" />
     <None Include="Resources\tab_datacreation.png" />

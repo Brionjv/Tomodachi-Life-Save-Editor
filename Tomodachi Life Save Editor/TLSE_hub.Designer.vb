@@ -325,7 +325,7 @@ Partial Class TLSE_hub
         '
         'text_issues
         '
-        Me.text_issues.Location = New System.Drawing.Point(9, 389)
+        Me.text_issues.Location = New System.Drawing.Point(687, 7)
         Me.text_issues.Name = "text_issues"
         Me.text_issues.Size = New System.Drawing.Size(114, 72)
         Me.text_issues.TabIndex = 20
@@ -1924,6 +1924,7 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_datacreation)
         Me.Controls.Add(Me.TLSE_menu_datamanagement)
         Me.Controls.Add(Me.TLSE_menu_islandedit)
@@ -1931,7 +1932,6 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
-        Me.Controls.Add(Me.TLSE_menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"

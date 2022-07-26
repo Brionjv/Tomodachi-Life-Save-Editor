@@ -62,6 +62,29 @@ Partial Class TLSE_creaislandranking
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
+        Me.Panel_islandaddress = New System.Windows.Forms.Panel()
+        Me.Text_islandaddress = New System.Windows.Forms.TextBox()
+        Me.Warning_islandaddress = New System.Windows.Forms.PictureBox()
+        Me.AdvH_islandaddress = New System.Windows.Forms.PictureBox()
+        Me.Title_islandaddress = New System.Windows.Forms.Label()
+        Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_islandname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_islandname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_islandname = New System.Windows.Forms.ComboBox()
+        Me.Title_islandname = New System.Windows.Forms.Label()
+        Me.Panel_islandname = New System.Windows.Forms.Panel()
+        Me.Text_islandname = New System.Windows.Forms.TextBox()
+        Me.Icon_islandname = New System.Windows.Forms.PictureBox()
+        Me.Text_dataislandranking = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.valu_starisland = New System.Windows.Forms.NumericUpDown()
+        Me.Addsymbol_islandname = New System.Windows.Forms.PictureBox()
+        Me.Fea_yrislandinfo = New System.Windows.Forms.Button()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -86,6 +109,17 @@ Partial Class TLSE_creaislandranking
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_islandaddress.SuspendLayout()
+        CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_addsymb_islandname.SuspendLayout()
+        Me.Panel_spesymb_islandname_cancel.SuspendLayout()
+        Me.Panel_spesymb_islandname_add.SuspendLayout()
+        Me.Panel_islandname.SuspendLayout()
+        CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_starisland, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -500,7 +534,7 @@ Partial Class TLSE_creaislandranking
         Me.Text_menu_save.Name = "Text_menu_save"
         Me.Text_menu_save.Size = New System.Drawing.Size(69, 34)
         Me.Text_menu_save.TabIndex = 2
-        Me.Text_menu_save.Text = "Save"
+        Me.Text_menu_save.Text = "Create"
         Me.Text_menu_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Minimizebutton
@@ -564,16 +598,297 @@ Partial Class TLSE_creaislandranking
         Me.TLSE_logo.TabIndex = 342
         Me.TLSE_logo.TabStop = False
         '
+        'Panel_islandaddress
+        '
+        Me.Panel_islandaddress.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_islandaddress.Controls.Add(Me.Text_islandaddress)
+        Me.Panel_islandaddress.Location = New System.Drawing.Point(497, 209)
+        Me.Panel_islandaddress.Name = "Panel_islandaddress"
+        Me.Panel_islandaddress.Size = New System.Drawing.Size(220, 17)
+        Me.Panel_islandaddress.TabIndex = 370
+        '
+        'Text_islandaddress
+        '
+        Me.Text_islandaddress.BackColor = System.Drawing.Color.MistyRose
+        Me.Text_islandaddress.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_islandaddress.Location = New System.Drawing.Point(2, 2)
+        Me.Text_islandaddress.MaxLength = 32
+        Me.Text_islandaddress.Name = "Text_islandaddress"
+        Me.Text_islandaddress.Size = New System.Drawing.Size(216, 13)
+        Me.Text_islandaddress.TabIndex = 101
+        Me.Text_islandaddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Warning_islandaddress
+        '
+        Me.Warning_islandaddress.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_islandaddress.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_islandaddress.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_islandaddress.Location = New System.Drawing.Point(695, 185)
+        Me.Warning_islandaddress.Name = "Warning_islandaddress"
+        Me.Warning_islandaddress.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_islandaddress.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_islandaddress.TabIndex = 369
+        Me.Warning_islandaddress.TabStop = False
+        '
+        'AdvH_islandaddress
+        '
+        Me.AdvH_islandaddress.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_islandaddress.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_islandaddress.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
+        Me.AdvH_islandaddress.Location = New System.Drawing.Point(717, 206)
+        Me.AdvH_islandaddress.Name = "AdvH_islandaddress"
+        Me.AdvH_islandaddress.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_islandaddress.TabIndex = 368
+        Me.AdvH_islandaddress.TabStop = False
+        Me.AdvH_islandaddress.Visible = False
+        '
+        'Title_islandaddress
+        '
+        Me.Title_islandaddress.BackColor = System.Drawing.Color.Transparent
+        Me.Title_islandaddress.Location = New System.Drawing.Point(497, 194)
+        Me.Title_islandaddress.Name = "Title_islandaddress"
+        Me.Title_islandaddress.Size = New System.Drawing.Size(220, 13)
+        Me.Title_islandaddress.TabIndex = 367
+        Me.Title_islandaddress.Text = "Island's address"
+        Me.Title_islandaddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_addsymb_islandname
+        '
+        Me.Panel_addsymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_islandname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Text_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_cancel)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_add)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Select_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Location = New System.Drawing.Point(61, 205)
+        Me.Panel_addsymb_islandname.Name = "Panel_addsymb_islandname"
+        Me.Panel_addsymb_islandname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_islandname.TabIndex = 375
+        Me.Panel_addsymb_islandname.Visible = False
+        '
+        'Text_spesymb_islandname
+        '
+        Me.Text_spesymb_islandname.AutoSize = True
+        Me.Text_spesymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_islandname.Name = "Text_spesymb_islandname"
+        Me.Text_spesymb_islandname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_islandname.TabIndex = 93
+        Me.Text_spesymb_islandname.Text = "T"
+        Me.Text_spesymb_islandname.Visible = False
+        '
+        'Panel_spesymb_islandname_cancel
+        '
+        Me.Panel_spesymb_islandname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_cancel.Controls.Add(Me.Text_spesymb_islandname_cancel)
+        Me.Panel_spesymb_islandname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_islandname_cancel.Name = "Panel_spesymb_islandname_cancel"
+        Me.Panel_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_cancel.TabIndex = 94
+        '
+        'Text_spesymb_islandname_cancel
+        '
+        Me.Text_spesymb_islandname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_islandname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_islandname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_islandname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_islandname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_islandname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_islandname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_islandname_cancel.Name = "Text_spesymb_islandname_cancel"
+        Me.Text_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_islandname_cancel.TabIndex = 5
+        Me.Text_spesymb_islandname_cancel.Text = "Cancel"
+        Me.Text_spesymb_islandname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_spesymb_islandname_add
+        '
+        Me.Panel_spesymb_islandname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_n)
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_pn)
+        Me.Panel_spesymb_islandname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_islandname_add.Name = "Panel_spesymb_islandname_add"
+        Me.Panel_spesymb_islandname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_add.TabIndex = 93
+        '
+        'Text_spesymb_add_islandname_n
+        '
+        Me.Text_spesymb_add_islandname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_n.Name = "Text_spesymb_add_islandname_n"
+        Me.Text_spesymb_add_islandname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_n.TabIndex = 3
+        Me.Text_spesymb_add_islandname_n.Text = "Add"
+        Me.Text_spesymb_add_islandname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_islandname_pn
+        '
+        Me.Text_spesymb_add_islandname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_pn.Name = "Text_spesymb_add_islandname_pn"
+        Me.Text_spesymb_add_islandname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_pn.TabIndex = 4
+        Me.Text_spesymb_add_islandname_pn.Text = "Add"
+        Me.Text_spesymb_add_islandname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spesymb_islandname
+        '
+        Me.Select_spesymb_islandname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_islandname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_islandname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_islandname.ItemHeight = 13
+        Me.Select_spesymb_islandname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_islandname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_islandname.Name = "Select_spesymb_islandname"
+        Me.Select_spesymb_islandname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_islandname.TabIndex = 0
+        '
+        'Title_islandname
+        '
+        Me.Title_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Title_islandname.Location = New System.Drawing.Point(82, 194)
+        Me.Title_islandname.Name = "Title_islandname"
+        Me.Title_islandname.Size = New System.Drawing.Size(156, 13)
+        Me.Title_islandname.TabIndex = 374
+        Me.Title_islandname.Text = "Island's name"
+        Me.Title_islandname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_islandname
+        '
+        Me.Panel_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_islandname.Controls.Add(Me.Text_islandname)
+        Me.Panel_islandname.Location = New System.Drawing.Point(80, 208)
+        Me.Panel_islandname.Name = "Panel_islandname"
+        Me.Panel_islandname.Size = New System.Drawing.Size(160, 17)
+        Me.Panel_islandname.TabIndex = 373
+        '
+        'Text_islandname
+        '
+        Me.Text_islandname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_islandname.Location = New System.Drawing.Point(2, 2)
+        Me.Text_islandname.MaxLength = 10
+        Me.Text_islandname.Name = "Text_islandname"
+        Me.Text_islandname.Size = New System.Drawing.Size(156, 13)
+        Me.Text_islandname.TabIndex = 7
+        Me.Text_islandname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_islandname
+        '
+        Me.Icon_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_island
+        Me.Icon_islandname.Location = New System.Drawing.Point(61, 206)
+        Me.Icon_islandname.Name = "Icon_islandname"
+        Me.Icon_islandname.Size = New System.Drawing.Size(18, 20)
+        Me.Icon_islandname.TabIndex = 372
+        Me.Icon_islandname.TabStop = False
+        '
+        'Text_dataislandranking
+        '
+        Me.Text_dataislandranking.Location = New System.Drawing.Point(279, 232)
+        Me.Text_dataislandranking.MaxLength = 999999999
+        Me.Text_dataislandranking.Name = "Text_dataislandranking"
+        Me.Text_dataislandranking.Size = New System.Drawing.Size(385, 20)
+        Me.Text_dataislandranking.TabIndex = 376
+        Me.Text_dataislandranking.Text = "000000000000000000000000000000000000000000000000000000000000000000000000000000000" &
+    "100000000000000"
+        Me.Text_dataislandranking.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_starisland
+        Me.PictureBox1.Location = New System.Drawing.Point(337, 210)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(12, 12)
+        Me.PictureBox1.TabIndex = 377
+        Me.PictureBox1.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(351, 210)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(14, 13)
+        Me.Label2.TabIndex = 378
+        Me.Label2.Text = "X"
+        '
+        'valu_starisland
+        '
+        Me.valu_starisland.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_starisland.Location = New System.Drawing.Point(369, 208)
+        Me.valu_starisland.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_starisland.Name = "valu_starisland"
+        Me.valu_starisland.Size = New System.Drawing.Size(54, 16)
+        Me.valu_starisland.TabIndex = 379
+        '
+        'Addsymbol_islandname
+        '
+        Me.Addsymbol_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_islandname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_islandname.Location = New System.Drawing.Point(243, 205)
+        Me.Addsymbol_islandname.Name = "Addsymbol_islandname"
+        Me.Addsymbol_islandname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_islandname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_islandname.TabIndex = 380
+        Me.Addsymbol_islandname.TabStop = False
+        Me.Addsymbol_islandname.Visible = False
+        '
+        'Fea_yrislandinfo
+        '
+        Me.Fea_yrislandinfo.BackColor = System.Drawing.Color.White
+        Me.Fea_yrislandinfo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Fea_yrislandinfo.FlatAppearance.BorderSize = 0
+        Me.Fea_yrislandinfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Fea_yrislandinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Fea_yrislandinfo.Location = New System.Drawing.Point(297, 142)
+        Me.Fea_yrislandinfo.Name = "Fea_yrislandinfo"
+        Me.Fea_yrislandinfo.Size = New System.Drawing.Size(206, 23)
+        Me.Fea_yrislandinfo.TabIndex = 381
+        Me.Fea_yrislandinfo.Text = "Set your save file informations"
+        Me.Fea_yrislandinfo.UseVisualStyleBackColor = False
+        '
         'TLSE_creaislandranking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_datacreation
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 282)
+        Me.Controls.Add(Me.Fea_yrislandinfo)
+        Me.Controls.Add(Me.Panel_addsymb_islandname)
+        Me.Controls.Add(Me.valu_starisland)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Text_dataislandranking)
+        Me.Controls.Add(Me.Title_islandname)
+        Me.Controls.Add(Me.Panel_islandname)
+        Me.Controls.Add(Me.Icon_islandname)
+        Me.Controls.Add(Me.Panel_islandaddress)
+        Me.Controls.Add(Me.Warning_islandaddress)
+        Me.Controls.Add(Me.AdvH_islandaddress)
+        Me.Controls.Add(Me.Title_islandaddress)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.Addsymbol_islandname)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_creaislandranking"
@@ -610,6 +925,20 @@ Partial Class TLSE_creaislandranking
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_islandaddress.ResumeLayout(False)
+        Me.Panel_islandaddress.PerformLayout()
+        CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_addsymb_islandname.ResumeLayout(False)
+        Me.Panel_addsymb_islandname.PerformLayout()
+        Me.Panel_spesymb_islandname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_islandname_add.ResumeLayout(False)
+        Me.Panel_islandname.ResumeLayout(False)
+        Me.Panel_islandname.PerformLayout()
+        CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_starisland, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -653,4 +982,27 @@ Partial Class TLSE_creaislandranking
     Friend WithEvents Closebutton As PictureBox
     Friend WithEvents TLSE_logo_update As PictureBox
     Friend WithEvents TLSE_logo As PictureBox
+    Friend WithEvents Panel_islandaddress As Panel
+    Friend WithEvents Text_islandaddress As TextBox
+    Friend WithEvents Warning_islandaddress As PictureBox
+    Friend WithEvents AdvH_islandaddress As PictureBox
+    Friend WithEvents Title_islandaddress As Label
+    Friend WithEvents Panel_addsymb_islandname As Panel
+    Friend WithEvents Text_spesymb_islandname As Label
+    Friend WithEvents Panel_spesymb_islandname_cancel As Panel
+    Friend WithEvents Text_spesymb_islandname_cancel As Label
+    Friend WithEvents Panel_spesymb_islandname_add As Panel
+    Friend WithEvents Text_spesymb_add_islandname_n As Label
+    Friend WithEvents Text_spesymb_add_islandname_pn As Label
+    Friend WithEvents Select_spesymb_islandname As ComboBox
+    Friend WithEvents Title_islandname As Label
+    Friend WithEvents Panel_islandname As Panel
+    Friend WithEvents Text_islandname As TextBox
+    Friend WithEvents Icon_islandname As PictureBox
+    Friend WithEvents Text_dataislandranking As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents valu_starisland As NumericUpDown
+    Friend WithEvents Addsymbol_islandname As PictureBox
+    Friend WithEvents Fea_yrislandinfo As Button
 End Class
