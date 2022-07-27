@@ -63,6 +63,8 @@ Partial Class TLSE_hub
         Me.Icon_miimenu = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_menu_Miiedition = New System.Windows.Forms.Panel()
+        Me.Menu_voicepersonnality = New System.Windows.Forms.Panel()
+        Me.Text_menu_voicepersonnality = New System.Windows.Forms.Label()
         Me.Menu_miiprofile = New System.Windows.Forms.Panel()
         Me.Text_menu_miiprofile = New System.Windows.Forms.Label()
         Me.Menu_appareance = New System.Windows.Forms.Panel()
@@ -198,6 +200,7 @@ Partial Class TLSE_hub
         Me.Menu_travelersedit.SuspendLayout()
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu_Miiedition.SuspendLayout()
+        Me.Menu_voicepersonnality.SuspendLayout()
         Me.Menu_miiprofile.SuspendLayout()
         Me.Menu_appareance.SuspendLayout()
         CType(Me.Icon_phyappareance, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -671,6 +674,7 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_Miiedition.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_Miiedition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_voicepersonnality)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miiprofile)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_appareance)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Icon_phyappareance)
@@ -684,12 +688,33 @@ Partial Class TLSE_hub
         Me.TLSE_menu_Miiedition.TabIndex = 33
         Me.TLSE_menu_Miiedition.Visible = False
         '
+        'Menu_voicepersonnality
+        '
+        Me.Menu_voicepersonnality.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_voicepersonnality
+        Me.Menu_voicepersonnality.Controls.Add(Me.Text_menu_voicepersonnality)
+        Me.Menu_voicepersonnality.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_voicepersonnality.Location = New System.Drawing.Point(451, 501)
+        Me.Menu_voicepersonnality.Name = "Menu_voicepersonnality"
+        Me.Menu_voicepersonnality.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_voicepersonnality.TabIndex = 13
+        '
+        'Text_menu_voicepersonnality
+        '
+        Me.Text_menu_voicepersonnality.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_voicepersonnality.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_voicepersonnality.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_voicepersonnality.Name = "Text_menu_voicepersonnality"
+        Me.Text_menu_voicepersonnality.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_voicepersonnality.TabIndex = 2
+        Me.Text_menu_voicepersonnality.Text = "Voice / Personnality" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii voice, personnality"
+        Me.Text_menu_voicepersonnality.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Menu_miiprofile
         '
         Me.Menu_miiprofile.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miiprofile
         Me.Menu_miiprofile.Controls.Add(Me.Text_menu_miiprofile)
         Me.Menu_miiprofile.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Menu_miiprofile.Location = New System.Drawing.Point(599, 501)
+        Me.Menu_miiprofile.Location = New System.Drawing.Point(607, 501)
         Me.Menu_miiprofile.Name = "Menu_miiprofile"
         Me.Menu_miiprofile.Size = New System.Drawing.Size(156, 126)
         Me.Menu_miiprofile.TabIndex = 12
@@ -844,7 +869,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.0.4"
+        Me.TLSE_version.Text = "Version 5.0.5"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1924,14 +1949,14 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_datacreation)
-        Me.Controls.Add(Me.TLSE_menu_datamanagement)
-        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
+        Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_datacreation)
+        Me.Controls.Add(Me.TLSE_menu_datamanagement)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1961,6 +1986,7 @@ Partial Class TLSE_hub
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu_Miiedition.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.PerformLayout()
+        Me.Menu_voicepersonnality.ResumeLayout(False)
         Me.Menu_miiprofile.ResumeLayout(False)
         Me.Menu_appareance.ResumeLayout(False)
         CType(Me.Icon_phyappareance, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2196,4 +2222,6 @@ Partial Class TLSE_hub
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Panel15 As Panel
     Friend WithEvents Label2 As Label
+    Friend WithEvents Menu_voicepersonnality As Panel
+    Friend WithEvents Text_menu_voicepersonnality As Label
 End Class

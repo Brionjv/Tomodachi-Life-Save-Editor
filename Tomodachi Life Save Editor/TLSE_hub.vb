@@ -426,6 +426,23 @@ Public Class TLSE_hub
         Menu_miiprofile.BackgroundImage = My.Resources.bbl_miiprofile
     End Sub
 
+    Private Sub Text_menu_voicepersonnality_Click(sender As Object, e As EventArgs) Handles Text_menu_voicepersonnality.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_voicepersonnality.TLSE_logo_update.Visible = True
+        End If
+        TLSE_voicepersonnality.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_voicepersonnality_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_voicepersonnality.MouseMove
+        Menu_voicepersonnality.BackgroundImage = My.Resources.bbl_voicepersonnality_act
+    End Sub
+
+    Private Sub Text_menu_voicepersonnality_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_voicepersonnality.MouseLeave
+        Menu_voicepersonnality.BackgroundImage = My.Resources.bbl_voicepersonnality
+    End Sub
+
+
     Private Sub Icon_menu_miiedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_miiedit.MouseMove
         Icon_menu_miiedit.Image = My.Resources.icon_menu_on
     End Sub
