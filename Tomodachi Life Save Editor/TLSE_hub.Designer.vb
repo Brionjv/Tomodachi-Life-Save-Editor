@@ -63,6 +63,15 @@ Partial Class TLSE_hub
         Me.Icon_miimenu = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_menu_Miiedition = New System.Windows.Forms.Panel()
+        Me.Menu_miistatus = New System.Windows.Forms.Panel()
+        Me.Text_menu_miistatus = New System.Windows.Forms.Label()
+        Me.Menu_miiinventory = New System.Windows.Forms.Panel()
+        Me.Text_menu_miiinventory = New System.Windows.Forms.Label()
+        Me.Menu_miisongs = New System.Windows.Forms.Panel()
+        Me.Text_menu_miisongs = New System.Windows.Forms.Label()
+        Me.Menu_miifoods = New System.Windows.Forms.Panel()
+        Me.Text_menu_miifoods = New System.Windows.Forms.Label()
+        Me.Icon_miiactivity = New System.Windows.Forms.PictureBox()
         Me.Menu_voicepersonnality = New System.Windows.Forms.Panel()
         Me.Text_menu_voicepersonnality = New System.Windows.Forms.Label()
         Me.Menu_miiprofile = New System.Windows.Forms.Panel()
@@ -200,6 +209,11 @@ Partial Class TLSE_hub
         Me.Menu_travelersedit.SuspendLayout()
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu_Miiedition.SuspendLayout()
+        Me.Menu_miistatus.SuspendLayout()
+        Me.Menu_miiinventory.SuspendLayout()
+        Me.Menu_miisongs.SuspendLayout()
+        Me.Menu_miifoods.SuspendLayout()
+        CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_voicepersonnality.SuspendLayout()
         Me.Menu_miiprofile.SuspendLayout()
         Me.Menu_appareance.SuspendLayout()
@@ -674,6 +688,11 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_Miiedition.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_Miiedition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miistatus)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miiinventory)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miisongs)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miifoods)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Icon_miiactivity)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_voicepersonnality)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miiprofile)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_appareance)
@@ -687,6 +706,100 @@ Partial Class TLSE_hub
         Me.TLSE_menu_Miiedition.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu_Miiedition.TabIndex = 33
         Me.TLSE_menu_Miiedition.Visible = False
+        '
+        'Menu_miistatus
+        '
+        Me.Menu_miistatus.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miistatus
+        Me.Menu_miistatus.Controls.Add(Me.Text_menu_miistatus)
+        Me.Menu_miistatus.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_miistatus.Location = New System.Drawing.Point(484, 259)
+        Me.Menu_miistatus.Name = "Menu_miistatus"
+        Me.Menu_miistatus.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_miistatus.TabIndex = 18
+        '
+        'Text_menu_miistatus
+        '
+        Me.Text_menu_miistatus.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miistatus.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_miistatus.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_miistatus.Name = "Text_menu_miistatus"
+        Me.Text_menu_miistatus.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_miistatus.TabIndex = 2
+        Me.Text_menu_miistatus.Text = "Mii status" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii level, experience, hair color (spray)," &
+    " catchphrase"
+        Me.Text_menu_miistatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_miiinventory
+        '
+        Me.Menu_miiinventory.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miiinventory
+        Me.Menu_miiinventory.Controls.Add(Me.Text_menu_miiinventory)
+        Me.Menu_miiinventory.Location = New System.Drawing.Point(646, 202)
+        Me.Menu_miiinventory.Name = "Menu_miiinventory"
+        Me.Menu_miiinventory.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_miiinventory.TabIndex = 17
+        '
+        'Text_menu_miiinventory
+        '
+        Me.Text_menu_miiinventory.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miiinventory.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_miiinventory.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_miiinventory.Name = "Text_menu_miiinventory"
+        Me.Text_menu_miiinventory.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_miiinventory.TabIndex = 2
+        Me.Text_menu_miiinventory.Text = "Mii inventory" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit gifs, mii economy, equiped items"
+        Me.Text_menu_miiinventory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_miisongs
+        '
+        Me.Menu_miisongs.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miisongs
+        Me.Menu_miisongs.Controls.Add(Me.Text_menu_miisongs)
+        Me.Menu_miisongs.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_miisongs.Location = New System.Drawing.Point(490, 61)
+        Me.Menu_miisongs.Name = "Menu_miisongs"
+        Me.Menu_miisongs.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_miisongs.TabIndex = 16
+        '
+        'Text_menu_miisongs
+        '
+        Me.Text_menu_miisongs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miisongs.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_miisongs.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_miisongs.Name = "Text_menu_miisongs"
+        Me.Text_menu_miisongs.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_miisongs.TabIndex = 2
+        Me.Text_menu_miisongs.Text = "Mii songs" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii songs, unlock mii songs"
+        Me.Text_menu_miisongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_miifoods
+        '
+        Me.Menu_miifoods.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miifoods
+        Me.Menu_miifoods.Controls.Add(Me.Text_menu_miifoods)
+        Me.Menu_miifoods.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_miifoods.Location = New System.Drawing.Point(646, 74)
+        Me.Menu_miifoods.Name = "Menu_miifoods"
+        Me.Menu_miifoods.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_miifoods.TabIndex = 15
+        '
+        'Text_menu_miifoods
+        '
+        Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miifoods.ForeColor = System.Drawing.Color.Black
+        Me.Text_menu_miifoods.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_miifoods.Name = "Text_menu_miifoods"
+        Me.Text_menu_miifoods.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_miifoods.TabIndex = 2
+        Me.Text_menu_miifoods.Text = "Mii foods" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii tummies, favorite foods"
+        Me.Text_menu_miifoods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_miiactivity
+        '
+        Me.Icon_miiactivity.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_miiactivity.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menumiiactivity
+        Me.Icon_miiactivity.Location = New System.Drawing.Point(560, 192)
+        Me.Icon_miiactivity.Name = "Icon_miiactivity"
+        Me.Icon_miiactivity.Size = New System.Drawing.Size(80, 61)
+        Me.Icon_miiactivity.TabIndex = 14
+        Me.Icon_miiactivity.TabStop = False
         '
         'Menu_voicepersonnality
         '
@@ -1986,6 +2099,11 @@ Partial Class TLSE_hub
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu_Miiedition.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.PerformLayout()
+        Me.Menu_miistatus.ResumeLayout(False)
+        Me.Menu_miiinventory.ResumeLayout(False)
+        Me.Menu_miisongs.ResumeLayout(False)
+        Me.Menu_miifoods.ResumeLayout(False)
+        CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_voicepersonnality.ResumeLayout(False)
         Me.Menu_miiprofile.ResumeLayout(False)
         Me.Menu_appareance.ResumeLayout(False)
@@ -2224,4 +2342,13 @@ Partial Class TLSE_hub
     Friend WithEvents Label2 As Label
     Friend WithEvents Menu_voicepersonnality As Panel
     Friend WithEvents Text_menu_voicepersonnality As Label
+    Friend WithEvents Menu_miistatus As Panel
+    Friend WithEvents Text_menu_miistatus As Label
+    Friend WithEvents Menu_miiinventory As Panel
+    Friend WithEvents Text_menu_miiinventory As Label
+    Friend WithEvents Menu_miisongs As Panel
+    Friend WithEvents Text_menu_miisongs As Label
+    Friend WithEvents Menu_miifoods As Panel
+    Friend WithEvents Text_menu_miifoods As Label
+    Friend WithEvents Icon_miiactivity As PictureBox
 End Class

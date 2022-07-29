@@ -231,6 +231,12 @@
     <Compile Include="TLSE_miiprofile.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_miistatus.Designer.vb">
+      <DependentUpon>TLSE_miistatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_miistatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_relamechanics.Designer.vb">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
     </Compile>
@@ -341,6 +347,9 @@
     <EmbeddedResource Include="TLSE_miiprofile.resx">
       <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_miistatus.resx">
+      <DependentUpon>TLSE_miistatus.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relamechanics.resx">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
     </EmbeddedResource>
@@ -446,6 +455,152 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_lock.png" />
+    <None Include="Resources\bg_starmiilevel.png" />
+    <None Include="Resources\HCdefault.png" />
+    <None Include="Resources\HCBE.png" />
+    <None Include="Resources\HCBC.png" />
+    <None Include="Resources\HCBA.png" />
+    <None Include="Resources\HCB8.png" />
+    <None Include="Resources\HCB6.png" />
+    <None Include="Resources\HCB4.png" />
+    <None Include="Resources\HCB2.png" />
+    <None Include="Resources\HCB0.png" />
+    <None Include="Resources\HCAE.png" />
+    <None Include="Resources\HCAC.png" />
+    <None Include="Resources\HCAA.png" />
+    <None Include="Resources\HCA8.png" />
+    <None Include="Resources\HCA6.png" />
+    <None Include="Resources\HCA4.png" />
+    <None Include="Resources\HCA2.png" />
+    <None Include="Resources\HCA0.png" />
+    <None Include="Resources\HC98.png" />
+    <None Include="Resources\HC96.png" />
+    <None Include="Resources\HC94.png" />
+    <None Include="Resources\HC92.png" />
+    <None Include="Resources\HC90.png" />
+    <None Include="Resources\HC88.png" />
+    <None Include="Resources\HC86.png" />
+    <None Include="Resources\HC84.png" />
+    <None Include="Resources\HC82.png" />
+    <None Include="Resources\HC80.png" />
+    <None Include="Resources\HC9E.png" />
+    <None Include="Resources\HC9C.png" />
+    <None Include="Resources\HC9A.png" />
+    <None Include="Resources\HC8E.png" />
+    <None Include="Resources\HC8C.png" />
+    <None Include="Resources\HC8A.png" />
+    <None Include="Resources\bg_haircolor.png" />
+    <None Include="Resources\exp99.png" />
+    <None Include="Resources\exp98.png" />
+    <None Include="Resources\exp97.png" />
+    <None Include="Resources\exp96.png" />
+    <None Include="Resources\exp95.png" />
+    <None Include="Resources\exp94.png" />
+    <None Include="Resources\exp93.png" />
+    <None Include="Resources\exp92.png" />
+    <None Include="Resources\exp91.png" />
+    <None Include="Resources\exp90.png" />
+    <None Include="Resources\exp89.png" />
+    <None Include="Resources\exp88.png" />
+    <None Include="Resources\exp87.png" />
+    <None Include="Resources\exp86.png" />
+    <None Include="Resources\exp85.png" />
+    <None Include="Resources\exp84.png" />
+    <None Include="Resources\exp83.png" />
+    <None Include="Resources\exp82.png" />
+    <None Include="Resources\exp81.png" />
+    <None Include="Resources\exp80.png" />
+    <None Include="Resources\exp79.png" />
+    <None Include="Resources\exp78.png" />
+    <None Include="Resources\exp77.png" />
+    <None Include="Resources\exp76.png" />
+    <None Include="Resources\exp75.png" />
+    <None Include="Resources\exp74.png" />
+    <None Include="Resources\exp73.png" />
+    <None Include="Resources\exp72.png" />
+    <None Include="Resources\exp71.png" />
+    <None Include="Resources\exp70.png" />
+    <None Include="Resources\exp69.png" />
+    <None Include="Resources\exp68.png" />
+    <None Include="Resources\exp67.png" />
+    <None Include="Resources\exp66.png" />
+    <None Include="Resources\exp65.png" />
+    <None Include="Resources\exp64.png" />
+    <None Include="Resources\exp63.png" />
+    <None Include="Resources\exp62.png" />
+    <None Include="Resources\exp61.png" />
+    <None Include="Resources\exp60.png" />
+    <None Include="Resources\exp59.png" />
+    <None Include="Resources\exp58.png" />
+    <None Include="Resources\exp57.png" />
+    <None Include="Resources\exp56.png" />
+    <None Include="Resources\exp55.png" />
+    <None Include="Resources\exp54.png" />
+    <None Include="Resources\exp53.png" />
+    <None Include="Resources\exp52.png" />
+    <None Include="Resources\exp51.png" />
+    <None Include="Resources\exp50.png" />
+    <None Include="Resources\exp49.png" />
+    <None Include="Resources\exp48.png" />
+    <None Include="Resources\exp47.png" />
+    <None Include="Resources\exp46.png" />
+    <None Include="Resources\exp45.png" />
+    <None Include="Resources\exp44.png" />
+    <None Include="Resources\exp43.png" />
+    <None Include="Resources\exp42.png" />
+    <None Include="Resources\exp41.png" />
+    <None Include="Resources\exp40.png" />
+    <None Include="Resources\exp39.png" />
+    <None Include="Resources\exp38.png" />
+    <None Include="Resources\exp37.png" />
+    <None Include="Resources\exp36.png" />
+    <None Include="Resources\exp35.png" />
+    <None Include="Resources\exp34.png" />
+    <None Include="Resources\exp33.png" />
+    <None Include="Resources\exp32.png" />
+    <None Include="Resources\exp31.png" />
+    <None Include="Resources\exp30.png" />
+    <None Include="Resources\exp29.png" />
+    <None Include="Resources\exp28.png" />
+    <None Include="Resources\exp27.png" />
+    <None Include="Resources\exp26.png" />
+    <None Include="Resources\exp25.png" />
+    <None Include="Resources\exp24.png" />
+    <None Include="Resources\exp23.png" />
+    <None Include="Resources\exp22.png" />
+    <None Include="Resources\exp21.png" />
+    <None Include="Resources\exp20.png" />
+    <None Include="Resources\exp19.png" />
+    <None Include="Resources\exp18.png" />
+    <None Include="Resources\exp17.png" />
+    <None Include="Resources\exp16.png" />
+    <None Include="Resources\exp15.png" />
+    <None Include="Resources\exp14.png" />
+    <None Include="Resources\exp13.png" />
+    <None Include="Resources\exp12.png" />
+    <None Include="Resources\exp11.png" />
+    <None Include="Resources\exp10.png" />
+    <None Include="Resources\exp9.png" />
+    <None Include="Resources\exp8.png" />
+    <None Include="Resources\exp7.png" />
+    <None Include="Resources\exp6.png" />
+    <None Include="Resources\exp5.png" />
+    <None Include="Resources\exp4.png" />
+    <None Include="Resources\exp3.png" />
+    <None Include="Resources\exp2.png" />
+    <None Include="Resources\exp1.png" />
+    <None Include="Resources\exp0.png" />
+    <None Include="Resources\bg_miiedit.png" />
+    <None Include="Resources\bbl_miiinventory_act.png" />
+    <None Include="Resources\bbl_miiinventory.png" />
+    <None Include="Resources\bbl_miistatus_act.png" />
+    <None Include="Resources\bbl_miistatus.png" />
+    <None Include="Resources\bbl_miisongs_act.png" />
+    <None Include="Resources\bbl_miisongs.png" />
+    <None Include="Resources\icon_menumiiactivity.png" />
+    <None Include="Resources\bbl_miifoods_act.png" />
+    <None Include="Resources\bbl_miifoods.png" />
     <None Include="Resources\icon_intonation_4_act.png" />
     <None Include="Resources\icon_intonation_4.png" />
     <None Include="Resources\icon_intonation_3_act.png" />

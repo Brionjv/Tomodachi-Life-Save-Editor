@@ -1504,6 +1504,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_energy.Size = New System.Drawing.Size(58, 16)
         Me.valu_energy.TabIndex = 480
         Me.valu_energy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_energy.Visible = False
         '
         'valu_speech
         '
@@ -1514,6 +1515,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_speech.Size = New System.Drawing.Size(58, 16)
         Me.valu_speech.TabIndex = 481
         Me.valu_speech.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_speech.Visible = False
         '
         'valu_facialexpressions
         '
@@ -1524,6 +1526,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_facialexpressions.Size = New System.Drawing.Size(58, 16)
         Me.valu_facialexpressions.TabIndex = 482
         Me.valu_facialexpressions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_facialexpressions.Visible = False
         '
         'valu_mood
         '
@@ -1534,6 +1537,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_mood.Size = New System.Drawing.Size(58, 16)
         Me.valu_mood.TabIndex = 483
         Me.valu_mood.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_mood.Visible = False
         '
         'valu_overall
         '
@@ -1544,6 +1548,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_overall.Size = New System.Drawing.Size(58, 16)
         Me.valu_overall.TabIndex = 484
         Me.valu_overall.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_overall.Visible = False
         '
         'Text_pitch
         '
@@ -1617,6 +1622,7 @@ Partial Class TLSE_voicepersonnality
         Me.valu_intonation.Size = New System.Drawing.Size(58, 16)
         Me.valu_intonation.TabIndex = 496
         Me.valu_intonation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_intonation.Visible = False
         '
         'Text_intonation
         '

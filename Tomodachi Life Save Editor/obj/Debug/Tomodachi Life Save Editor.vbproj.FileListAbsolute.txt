@@ -38,3 +38,4 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_dataislandranking.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_creaislandranking.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_voicepersonnality.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_miistatus.resources
