@@ -5896,45 +5896,45 @@ Public Class TLSE_miiprofile
     Public Sub Writemiiprofile()
         Try
             Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-            For i = 0 To 29
+            For i As Integer = 0 To 29
                 Writedata.Position = firstname + i
                 Writedata.WriteInt8(0)
             Next
             Writedata.Position = firstname
             Writedata.WriteUnicodeString(Text_firstname.Text)
-            For i = 0 To 29
+            For i As Integer = 0 To 29
                 Writedata.Position = lastname + i
                 Writedata.WriteInt8(0)
             Next
             Writedata.Position = lastname
             Writedata.WriteUnicodeString(Text_lastname.Text)
-            For i = 0 To 19
+            For i As Integer = 0 To 19
                 Writedata.Position = nickname + i
                 Writedata.WriteInt8(0)
             Next
             Writedata.Position = nickname
             Writedata.WriteUnicodeString(Text_nickname.Text)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
-                For i = 0 To 39
+                For i As Integer = 0 To 39
                     Writedata.Position = pronunnickname + i
                     Writedata.WriteInt8(0)
                 Next
                 Writedata.Position = pronunnickname
                 Writedata.WriteUnicodeString(Text_pronun_nickname.Text)
-                For i = 0 To 59
+                For i As Integer = 0 To 59
                     Writedata.Position = pronunfirstname + i
                     Writedata.WriteInt8(0)
                 Next
                 Writedata.Position = pronunfirstname
                 Writedata.WriteUnicodeString(Text_pronun_firstname.Text)
-                For i = 0 To 59
+                For i As Integer = 0 To 59
                     Writedata.Position = pronunlastname + i
                     Writedata.WriteInt8(0)
                 Next
                 Writedata.Position = pronunlastname
                 Writedata.WriteUnicodeString(Text_pronun_lastname.Text)
             End If
-            For i = 0 To 19
+            For i As Integer = 0 To 19
                 Writedata.Position = creator + i
                 Writedata.WriteInt8(0)
             Next

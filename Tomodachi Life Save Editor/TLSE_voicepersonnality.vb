@@ -3767,6 +3767,12 @@ Public Class TLSE_voicepersonnality
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         Writevoicepersonnality()
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_Miiedition.Visible = True
+        Me.Close()
     End Sub
 
     Public Sub Writevoicepersonnality()

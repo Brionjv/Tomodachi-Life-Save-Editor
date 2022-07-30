@@ -155,13 +155,13 @@ Partial Class TLSE_miistatus
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Text_starslevel = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_J1 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_1 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_J2 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_2 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_3 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_4 = New System.Windows.Forms.CheckBox()
+        Me.Check_catchphrase_5 = New System.Windows.Forms.CheckBox()
         Me.Fea_lock_1 = New System.Windows.Forms.Button()
         Me.Fea_lock_2 = New System.Windows.Forms.Button()
         Me.Fea_lock_3 = New System.Windows.Forms.Button()
@@ -1680,6 +1680,7 @@ Partial Class TLSE_miistatus
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(71, 50)
         Me.Panel3.TabIndex = 504
+        Me.Panel3.Visible = False
         '
         'Text_starslevel
         '
@@ -1690,119 +1691,119 @@ Partial Class TLSE_miistatus
         Me.Text_starslevel.TabIndex = 0
         Me.Text_starslevel.Text = "X 0"
         '
-        'CheckBox1
+        'Check_catchphrase_J1
         '
-        Me.CheckBox1.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox1.BackColor = System.Drawing.Color.White
-        Me.CheckBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox1.FlatAppearance.BorderSize = 0
-        Me.CheckBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(532, 211)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox1.TabIndex = 506
-        Me.CheckBox1.UseVisualStyleBackColor = False
-        Me.CheckBox1.Visible = False
+        Me.Check_catchphrase_J1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_J1.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_J1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_J1.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_J1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_J1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_J1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_J1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_J1.Location = New System.Drawing.Point(532, 211)
+        Me.Check_catchphrase_J1.Name = "Check_catchphrase_J1"
+        Me.Check_catchphrase_J1.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_J1.TabIndex = 506
+        Me.Check_catchphrase_J1.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_J1.Visible = False
         '
-        'CheckBox2
+        'Check_catchphrase_1
         '
-        Me.CheckBox2.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox2.BackColor = System.Drawing.Color.White
-        Me.CheckBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox2.FlatAppearance.BorderSize = 0
-        Me.CheckBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Location = New System.Drawing.Point(532, 235)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox2.TabIndex = 507
-        Me.CheckBox2.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_1.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_1.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_1.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_1.Location = New System.Drawing.Point(532, 235)
+        Me.Check_catchphrase_1.Name = "Check_catchphrase_1"
+        Me.Check_catchphrase_1.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_1.TabIndex = 507
+        Me.Check_catchphrase_1.UseVisualStyleBackColor = False
         '
-        'CheckBox3
+        'Check_catchphrase_J2
         '
-        Me.CheckBox3.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox3.BackColor = System.Drawing.Color.White
-        Me.CheckBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox3.FlatAppearance.BorderSize = 0
-        Me.CheckBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.Location = New System.Drawing.Point(532, 259)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox3.TabIndex = 508
-        Me.CheckBox3.UseVisualStyleBackColor = False
-        Me.CheckBox3.Visible = False
+        Me.Check_catchphrase_J2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_J2.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_J2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_J2.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_J2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_J2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_J2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_J2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_J2.Location = New System.Drawing.Point(532, 259)
+        Me.Check_catchphrase_J2.Name = "Check_catchphrase_J2"
+        Me.Check_catchphrase_J2.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_J2.TabIndex = 508
+        Me.Check_catchphrase_J2.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_J2.Visible = False
         '
-        'CheckBox4
+        'Check_catchphrase_2
         '
-        Me.CheckBox4.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox4.BackColor = System.Drawing.Color.White
-        Me.CheckBox4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox4.FlatAppearance.BorderSize = 0
-        Me.CheckBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox4.Location = New System.Drawing.Point(532, 295)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox4.TabIndex = 509
-        Me.CheckBox4.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_2.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_2.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_2.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_2.Location = New System.Drawing.Point(532, 295)
+        Me.Check_catchphrase_2.Name = "Check_catchphrase_2"
+        Me.Check_catchphrase_2.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_2.TabIndex = 509
+        Me.Check_catchphrase_2.UseVisualStyleBackColor = False
         '
-        'CheckBox5
+        'Check_catchphrase_3
         '
-        Me.CheckBox5.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox5.BackColor = System.Drawing.Color.White
-        Me.CheckBox5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox5.FlatAppearance.BorderSize = 0
-        Me.CheckBox5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox5.Location = New System.Drawing.Point(532, 334)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox5.TabIndex = 510
-        Me.CheckBox5.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_3.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_3.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_3.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_3.Location = New System.Drawing.Point(532, 334)
+        Me.Check_catchphrase_3.Name = "Check_catchphrase_3"
+        Me.Check_catchphrase_3.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_3.TabIndex = 510
+        Me.Check_catchphrase_3.UseVisualStyleBackColor = False
         '
-        'CheckBox6
+        'Check_catchphrase_4
         '
-        Me.CheckBox6.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox6.BackColor = System.Drawing.Color.White
-        Me.CheckBox6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox6.FlatAppearance.BorderSize = 0
-        Me.CheckBox6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox6.Location = New System.Drawing.Point(532, 373)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox6.TabIndex = 511
-        Me.CheckBox6.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_4.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_4.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_4.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_4.Location = New System.Drawing.Point(532, 373)
+        Me.Check_catchphrase_4.Name = "Check_catchphrase_4"
+        Me.Check_catchphrase_4.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_4.TabIndex = 511
+        Me.Check_catchphrase_4.UseVisualStyleBackColor = False
         '
-        'CheckBox7
+        'Check_catchphrase_5
         '
-        Me.CheckBox7.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox7.BackColor = System.Drawing.Color.White
-        Me.CheckBox7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox7.FlatAppearance.BorderSize = 0
-        Me.CheckBox7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox7.Location = New System.Drawing.Point(532, 412)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(150, 21)
-        Me.CheckBox7.TabIndex = 512
-        Me.CheckBox7.UseVisualStyleBackColor = False
+        Me.Check_catchphrase_5.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_catchphrase_5.BackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_catchphrase_5.FlatAppearance.BorderSize = 0
+        Me.Check_catchphrase_5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_catchphrase_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_catchphrase_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_catchphrase_5.Location = New System.Drawing.Point(532, 412)
+        Me.Check_catchphrase_5.Name = "Check_catchphrase_5"
+        Me.Check_catchphrase_5.Size = New System.Drawing.Size(150, 21)
+        Me.Check_catchphrase_5.TabIndex = 512
+        Me.Check_catchphrase_5.UseVisualStyleBackColor = False
         '
         'Fea_lock_1
         '
@@ -1817,6 +1818,7 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_1.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_1.TabIndex = 514
         Me.Fea_lock_1.UseVisualStyleBackColor = False
+        Me.Fea_lock_1.Visible = False
         '
         'Fea_lock_2
         '
@@ -1831,6 +1833,7 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_2.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_2.TabIndex = 516
         Me.Fea_lock_2.UseVisualStyleBackColor = False
+        Me.Fea_lock_2.Visible = False
         '
         'Fea_lock_3
         '
@@ -1845,6 +1848,7 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_3.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_3.TabIndex = 517
         Me.Fea_lock_3.UseVisualStyleBackColor = False
+        Me.Fea_lock_3.Visible = False
         '
         'Fea_lock_4
         '
@@ -1859,6 +1863,7 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_4.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_4.TabIndex = 518
         Me.Fea_lock_4.UseVisualStyleBackColor = False
+        Me.Fea_lock_4.Visible = False
         '
         'Fea_lock_5
         '
@@ -1873,11 +1878,12 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_5.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_5.TabIndex = 519
         Me.Fea_lock_5.UseVisualStyleBackColor = False
+        Me.Fea_lock_5.Visible = False
         '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(707, 191)
+        Me.Label3.Location = New System.Drawing.Point(707, 199)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(78, 13)
         Me.Label3.TabIndex = 520
@@ -1948,20 +1954,20 @@ Partial Class TLSE_miistatus
         Me.Controls.Add(Me.Fea_lock_1)
         Me.Controls.Add(Me.Panel_cathph_05)
         Me.Controls.Add(Me.Icon_cathph_05)
-        Me.Controls.Add(Me.CheckBox7)
+        Me.Controls.Add(Me.Check_catchphrase_5)
         Me.Controls.Add(Me.Panel_cathph_04)
         Me.Controls.Add(Me.Icon_cathph_04)
-        Me.Controls.Add(Me.CheckBox6)
+        Me.Controls.Add(Me.Check_catchphrase_4)
         Me.Controls.Add(Me.Panel_cathph_03)
         Me.Controls.Add(Me.Icon_cathph_03)
-        Me.Controls.Add(Me.CheckBox5)
+        Me.Controls.Add(Me.Check_catchphrase_3)
         Me.Controls.Add(Me.Panel_cathph_02)
         Me.Controls.Add(Me.Icon_cathph_02)
-        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.Check_catchphrase_2)
         Me.Controls.Add(Me.Panel_cathph_J2)
-        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.Check_catchphrase_J2)
         Me.Controls.Add(Me.Panel_cathph_01)
-        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.Check_catchphrase_1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Panel_edit_haircolor)
@@ -1997,7 +2003,7 @@ Partial Class TLSE_miistatus
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.Check_catchphrase_J1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_miistatus"
@@ -2256,13 +2262,13 @@ Partial Class TLSE_miistatus
     Friend WithEvents Timer_arrowexp_left As Timer
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Text_starslevel As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
+    Friend WithEvents Check_catchphrase_J1 As CheckBox
+    Friend WithEvents Check_catchphrase_1 As CheckBox
+    Friend WithEvents Check_catchphrase_J2 As CheckBox
+    Friend WithEvents Check_catchphrase_2 As CheckBox
+    Friend WithEvents Check_catchphrase_3 As CheckBox
+    Friend WithEvents Check_catchphrase_4 As CheckBox
+    Friend WithEvents Check_catchphrase_5 As CheckBox
     Friend WithEvents Fea_lock_1 As Button
     Friend WithEvents Fea_lock_2 As Button
     Friend WithEvents Fea_lock_3 As Button

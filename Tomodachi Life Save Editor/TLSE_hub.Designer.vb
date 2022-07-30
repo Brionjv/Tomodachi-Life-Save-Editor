@@ -740,7 +740,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_miiinventory
         '
-        Me.Text_menu_miiinventory.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miiinventory.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_miiinventory.ForeColor = System.Drawing.Color.White
         Me.Text_menu_miiinventory.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_miiinventory.Name = "Text_menu_miiinventory"
@@ -761,7 +761,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_miisongs
         '
-        Me.Text_menu_miisongs.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miisongs.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_miisongs.ForeColor = System.Drawing.Color.White
         Me.Text_menu_miisongs.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_miisongs.Name = "Text_menu_miisongs"
@@ -782,7 +782,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_miifoods
         '
-        Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_miifoods.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_miifoods.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_miifoods.Name = "Text_menu_miifoods"
@@ -982,7 +982,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.0.5"
+        Me.TLSE_version.Text = "Version 5.0.6"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header

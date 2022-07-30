@@ -4566,31 +4566,112 @@ Public Class TLSE_miistatus
             Readdata.Position = Catchphrase5
             Text_cathph_05.Text = Readdata.ReadUnicodeString(16)
         Catch ex As Exception
-            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read voice and personnality"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read mii status"
             TLSE_dialog.ShowDialog()
         End Try
     End Sub
 
-    Private Sub valu_level_ValueChanged(sender As Object, e As EventArgs) Handles valu_level.ValueChanged
-        Select Case valu_level.Value
-            Case 0 To 11
-                Text_starslevel.Text = "X 0"
-            Case 12 To 23
-                Text_starslevel.Text = "X 1"
-            Case 24 To 35
-                Text_starslevel.Text = "X 2"
-            Case 36 To 47
-                Text_starslevel.Text = "X 3"
-            Case 48 To 59
-                Text_starslevel.Text = "X 4"
-            Case 60 To 71
-                Text_starslevel.Text = "X 5"
-            Case 72 To 83
-                Text_starslevel.Text = "X 6"
-            Case 84 To 95
-                Text_starslevel.Text = "X 7"
-            Case 96 To 99
-                Text_starslevel.Text = "X 8"
-        End Select
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
+        Writemiistatus()
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_Miiedition.Visible = True
+        Me.Close()
+    End Sub
+
+    Public Sub Writemiistatus()
+        Try
+            Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            If Filever_text.Text = "JP" Then
+                If Check_catchphrase_J1.Checked = True Then
+                    For i As Integer = 0 To 7
+                        Writedata.Position = CatchphraseJ1 + i
+                        Writedata.WriteInt8(0)
+                    Next
+                    Writedata.Position = CatchphraseJ1
+                    Writedata.WriteUnicodeString(Text_cathph_J1.Text)
+                End If
+                If Check_catchphrase_J2.Checked = True Then
+                    For i As Integer = 0 To 31
+                        Writedata.Position = CatchphraseJ2 + i
+                        Writedata.WriteInt8(0)
+                    Next
+                    Writedata.Position = CatchphraseJ2
+                    Writedata.WriteUnicodeString(Text_cathph_J2.Text)
+                End If
+
+            Else
+                If Check_catchphrase_1.Checked = True Then
+                    For i As Integer = 0 To 31
+                        Writedata.Position = Catchphrase1 + i
+                        Writedata.WriteInt8(0)
+                    Next
+                    Writedata.Position = Catchphrase1
+                    Writedata.WriteUnicodeString(Text_cathph_01.Text)
+                End If
+                fs.Position = Gesture_1
+                fs.WriteByte(valu_gesture_1.Value)
+                fs.Position = Gesture_2
+                fs.WriteByte(valu_gesture_2.Value)
+                fs.Position = Gesture_3
+                fs.WriteByte(valu_gesture_3.Value)
+                fs.Position = Gesture_4
+                fs.WriteByte(valu_gesture_4.Value)
+                fs.Position = Gesture_5
+                fs.WriteByte(valu_gesture_5.Value)
+            End If
+            fs.Position = Miilevel
+            fs.WriteByte(valu_level.Value)
+            fs.Position = Miiexperience
+            fs.WriteByte(valu_experience.Value)
+            fs.Position = Haircolor
+            fs.WriteByte(valu_haircolor.Value)
+            Writedata.Position = Pampered
+            Writedata.WriteUInt32(valu_ranking_pampered.Value)
+            Writedata.Position = Splurge
+            Writedata.WriteUInt32(valu_ranking_splurge.Value)
+            If Check_catchphrase_2.Checked = True Then
+                For i As Integer = 0 To 31
+                    Writedata.Position = Catchphrase2 + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = Catchphrase2
+                Writedata.WriteUnicodeString(Text_cathph_02.Text)
+            End If
+            If Check_catchphrase_3.Checked = True Then
+                For i As Integer = 0 To 31
+                    Writedata.Position = Catchphrase3 + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = Catchphrase3
+                Writedata.WriteUnicodeString(Text_cathph_03.Text)
+            End If
+            If Check_catchphrase_4.Checked = True Then
+                For i As Integer = 0 To 31
+                    Writedata.Position = Catchphrase4 + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = Catchphrase4
+                Writedata.WriteUnicodeString(Text_cathph_04.Text)
+            End If
+            If Check_catchphrase_5.Checked = True Then
+                For i As Integer = 0 To 31
+                    Writedata.Position = Catchphrase5 + i
+                    Writedata.WriteInt8(0)
+                Next
+                Writedata.Position = Catchphrase5
+                Writedata.WriteUnicodeString(Text_cathph_05.Text)
+            End If
+            Writedata.Flush()
+            fs.Flush()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Mii status has been successfully edited"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write Mii status"
+            TLSE_dialog.ShowDialog()
+        End Try
     End Sub
 End Class

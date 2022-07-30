@@ -651,16 +651,16 @@ Public Class TLSE_islandinfo
             Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
             Writedata.Position = Money
             Writedata.WriteUInt32(valu_money.Value)
-            For i = 0 To 19
-                Writedata.Position = IslandName
+            For i As Integer = 0 To 19
+                Writedata.Position = IslandName + i
                 Writedata.WriteInt8(0)
             Next
             Writedata.Position = IslandName
             Writedata.WriteUnicodeString(Text_islandname.Text)
             If Filever_text.Text = "JP" Then
             Else
-                For i = 0 To 39
-                    Writedata.Position = IslandPronun
+                For i As Integer = 0 To 39
+                    Writedata.Position = IslandPronun + i
                     Writedata.WriteInt8(0)
                 Next
                 Writedata.Position = IslandPronun

@@ -3408,13 +3408,13 @@ Public Class TLSE_travelers_status
         Try
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_1 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_1
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_1 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3455,13 +3455,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_2 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_2
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_2 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3502,13 +3502,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_3 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_3
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_3 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3549,13 +3549,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_4 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_4
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_4 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3596,13 +3596,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_5 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_5
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_5 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3643,13 +3643,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_6 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_6
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_6 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3690,13 +3690,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_7 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_7
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_7 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3737,13 +3737,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_8 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_8
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_8 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3784,13 +3784,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_9 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_9
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_9 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3831,13 +3831,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_10 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_10
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_10 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3878,13 +3878,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_11 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_11
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_11 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3925,13 +3925,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_12 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_12
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_12 + i
                     Writer.WriteInt8(0)
                 Next
@@ -3972,13 +3972,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_13 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_13
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_13 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4019,13 +4019,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_14 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_14
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_14 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4066,13 +4066,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_15 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_15
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_15 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4113,13 +4113,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_16 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_16
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_16 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4160,13 +4160,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_17 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_17
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_17 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4207,13 +4207,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_18 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_18
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_18 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4254,13 +4254,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_19 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_19
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_19 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4301,13 +4301,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_20 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_20
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_20 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4348,13 +4348,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_21 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_21
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_21 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4395,13 +4395,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_22 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_22
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_22 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4442,13 +4442,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_23 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_23
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_23 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4489,13 +4489,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_24 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_24
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_24 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4536,13 +4536,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_25 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_25
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_25 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4583,13 +4583,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_26 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_26
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_26 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4630,13 +4630,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_27 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_27
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_27 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4677,13 +4677,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_28 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_28
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_28 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4724,13 +4724,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_29 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_29
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_29 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4771,13 +4771,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_30 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_30
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_30 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4818,13 +4818,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_31 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_31
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_31 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4865,13 +4865,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_32 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_32
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_32 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4912,13 +4912,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_33 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_33
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_33 + i
                     Writer.WriteInt8(0)
                 Next
@@ -4959,13 +4959,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_34 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_34
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_34 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5006,13 +5006,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_35 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_35
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_35 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5053,13 +5053,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_36 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_36
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_36 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5100,13 +5100,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_37 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_37
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_37 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5147,13 +5147,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_38 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_38
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_38 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5194,13 +5194,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_39 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_39
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_39 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5241,13 +5241,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_40 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_40
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_40 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5288,13 +5288,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_41 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_41
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_41 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5335,13 +5335,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_42 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_42
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_42 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5382,13 +5382,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_43 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_43
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_43 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5429,13 +5429,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_44 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_44
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_44 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5476,13 +5476,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_45 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_45
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_45 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5523,13 +5523,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_46 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_46
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_46 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5570,13 +5570,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_47 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_47
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_47 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5617,13 +5617,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_48 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_48
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_48 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5664,13 +5664,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_49 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_49
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_49 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5711,13 +5711,13 @@ Public Class TLSE_travelers_status
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = name_50 + i
                     Writer.WriteInt8(0)
                 Next
                 Writer.Position = name_50
                 Writer.WriteUnicodeString(Text_travelersname.Text)
-                For i = 0 To 19
+                For i As Integer = 0 To 19
                     Writer.Position = message_50 + i
                     Writer.WriteInt8(0)
                 Next
@@ -5789,4 +5789,5 @@ Public Class TLSE_travelers_status
         TLSE_hub.TLSE_menu_travelersedit.Visible = True
         Me.Close()
     End Sub
+
 End Class

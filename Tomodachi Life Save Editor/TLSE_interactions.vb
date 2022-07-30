@@ -11337,6 +11337,12 @@ Public Class TLSE_interactions
             valu_enddateinterac.Value = valu_lastsavedate.Value + &H30000
         End If
         Writeinteraction()
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_Miiedition.Visible = True
+        Me.Close()
     End Sub
 
     Public Sub Writeinteraction()
