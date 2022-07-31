@@ -75,9 +75,30 @@ Public Class TLSE_crcxmodem
         TLSE_filepath.Text = TLSE_miiprofile.TLSE_filepath.Text
         Filever_text.Text = TLSE_miiprofile.Filever_text.Text
         savedataArc = TLSE_filepath.Text
+        Switchfilever()
         Text_crcmii.Text = "Failed to autofix checksum : Select" & vbNewLine & TLSE_miiprofile.Select_mii.Text
         Readmiiname()
         Select_mii.SelectedItem = TLSE_miiprofile.Select_mii.SelectedItem
+    End Sub
+
+    Public Sub Switchfilever()
+        If Filever_text.Text = "EU" Then
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+        End If
+        If Filever_text.Text = "US" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+        End If
+        If Filever_text.Text = "JP" Then
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+        End If
+        If Filever_text.Text = "KR" Then
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+        End If
+        TLSE_loading_logo.Image = TLSE_logo.Image
     End Sub
     Private Sub Select_mii_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_mii.SelectedIndexChanged
         readmiidata()

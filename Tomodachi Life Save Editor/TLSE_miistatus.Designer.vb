@@ -167,12 +167,13 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_3 = New System.Windows.Forms.Button()
         Me.Fea_lock_4 = New System.Windows.Forms.Button()
         Me.Fea_lock_5 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Title_gesture = New System.Windows.Forms.Label()
         Me.valu_gesture_1 = New System.Windows.Forms.NumericUpDown()
         Me.valu_gesture_2 = New System.Windows.Forms.NumericUpDown()
         Me.valu_gesture_3 = New System.Windows.Forms.NumericUpDown()
         Me.valu_gesture_4 = New System.Windows.Forms.NumericUpDown()
         Me.valu_gesture_5 = New System.Windows.Forms.NumericUpDown()
+        Me.Text_lockcatchphr = New System.Windows.Forms.TextBox()
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_selectmii.SuspendLayout()
         Me.Panel9.SuspendLayout()
@@ -1636,7 +1637,7 @@ Partial Class TLSE_miistatus
         Me.Title_haircolor.Name = "Title_haircolor"
         Me.Title_haircolor.Size = New System.Drawing.Size(104, 13)
         Me.Title_haircolor.TabIndex = 499
-        Me.Title_haircolor.Text = "Hair color"
+        Me.Title_haircolor.Text = "Hair color (spray)"
         Me.Title_haircolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_description
@@ -1818,7 +1819,6 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_1.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_1.TabIndex = 514
         Me.Fea_lock_1.UseVisualStyleBackColor = False
-        Me.Fea_lock_1.Visible = False
         '
         'Fea_lock_2
         '
@@ -1833,7 +1833,6 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_2.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_2.TabIndex = 516
         Me.Fea_lock_2.UseVisualStyleBackColor = False
-        Me.Fea_lock_2.Visible = False
         '
         'Fea_lock_3
         '
@@ -1848,7 +1847,6 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_3.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_3.TabIndex = 517
         Me.Fea_lock_3.UseVisualStyleBackColor = False
-        Me.Fea_lock_3.Visible = False
         '
         'Fea_lock_4
         '
@@ -1863,7 +1861,6 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_4.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_4.TabIndex = 518
         Me.Fea_lock_4.UseVisualStyleBackColor = False
-        Me.Fea_lock_4.Visible = False
         '
         'Fea_lock_5
         '
@@ -1878,17 +1875,16 @@ Partial Class TLSE_miistatus
         Me.Fea_lock_5.Size = New System.Drawing.Size(21, 21)
         Me.Fea_lock_5.TabIndex = 519
         Me.Fea_lock_5.UseVisualStyleBackColor = False
-        Me.Fea_lock_5.Visible = False
         '
-        'Label3
+        'Title_gesture
         '
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(707, 199)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(78, 13)
-        Me.Label3.TabIndex = 520
-        Me.Label3.Text = "Gestures"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_gesture.BackColor = System.Drawing.Color.Transparent
+        Me.Title_gesture.Location = New System.Drawing.Point(707, 199)
+        Me.Title_gesture.Name = "Title_gesture"
+        Me.Title_gesture.Size = New System.Drawing.Size(78, 13)
+        Me.Title_gesture.TabIndex = 520
+        Me.Title_gesture.Text = "Gestures"
+        Me.Title_gesture.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_gesture_1
         '
@@ -1935,18 +1931,30 @@ Partial Class TLSE_miistatus
         Me.valu_gesture_5.Size = New System.Drawing.Size(40, 16)
         Me.valu_gesture_5.TabIndex = 527
         '
+        'Text_lockcatchphr
+        '
+        Me.Text_lockcatchphr.Location = New System.Drawing.Point(477, 172)
+        Me.Text_lockcatchphr.Name = "Text_lockcatchphr"
+        Me.Text_lockcatchphr.Size = New System.Drawing.Size(205, 20)
+        Me.Text_lockcatchphr.TabIndex = 528
+        Me.Text_lockcatchphr.Text = "0000000017BFDC2BD03E7AD631BF957DA23E9E4B693F4A4A863E000000000000"
+        Me.Text_lockcatchphr.Visible = False
+        '
         'TLSE_miistatus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_miiedit
         Me.ClientSize = New System.Drawing.Size(800, 472)
+        Me.Controls.Add(Me.Text_lockcatchphr)
+        Me.Controls.Add(Me.Panel_edit_haircolor)
+        Me.Controls.Add(Me.Panel_cathph_J2)
         Me.Controls.Add(Me.valu_gesture_5)
         Me.Controls.Add(Me.valu_gesture_4)
         Me.Controls.Add(Me.valu_gesture_3)
         Me.Controls.Add(Me.valu_gesture_2)
         Me.Controls.Add(Me.valu_gesture_1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Title_gesture)
         Me.Controls.Add(Me.Fea_lock_5)
         Me.Controls.Add(Me.Fea_lock_4)
         Me.Controls.Add(Me.Fea_lock_3)
@@ -1964,13 +1972,11 @@ Partial Class TLSE_miistatus
         Me.Controls.Add(Me.Panel_cathph_02)
         Me.Controls.Add(Me.Icon_cathph_02)
         Me.Controls.Add(Me.Check_catchphrase_2)
-        Me.Controls.Add(Me.Panel_cathph_J2)
         Me.Controls.Add(Me.Check_catchphrase_J2)
         Me.Controls.Add(Me.Panel_cathph_01)
         Me.Controls.Add(Me.Check_catchphrase_1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel_description)
-        Me.Controls.Add(Me.Panel_edit_haircolor)
         Me.Controls.Add(Me.AdvH_haircolor)
         Me.Controls.Add(Me.Icon_haircolor)
         Me.Controls.Add(Me.valu_haircolor)
@@ -2274,10 +2280,11 @@ Partial Class TLSE_miistatus
     Friend WithEvents Fea_lock_3 As Button
     Friend WithEvents Fea_lock_4 As Button
     Friend WithEvents Fea_lock_5 As Button
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Title_gesture As Label
     Friend WithEvents valu_gesture_1 As NumericUpDown
     Friend WithEvents valu_gesture_2 As NumericUpDown
     Friend WithEvents valu_gesture_3 As NumericUpDown
     Friend WithEvents valu_gesture_4 As NumericUpDown
     Friend WithEvents valu_gesture_5 As NumericUpDown
+    Friend WithEvents Text_lockcatchphr As TextBox
 End Class

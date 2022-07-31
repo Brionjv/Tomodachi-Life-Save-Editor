@@ -896,6 +896,7 @@ Public Class TLSE_travelers_status
         Filever_text.Text = TLSE_hub.Filever_text.Text
         savedataArc = TLSE_filepath.Text
         Readmiiname()
+        Switchfilever()
         Try
             Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
             Reader.Position = lastdatesave
@@ -910,6 +911,25 @@ Public Class TLSE_travelers_status
                 TLSE_dialog.ShowDialog()
             End If
         End Try
+    End Sub
+
+    Public Sub Switchfilever()
+        If Filever_text.Text = "EU" Then
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+        End If
+        If Filever_text.Text = "US" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+        End If
+        If Filever_text.Text = "JP" Then
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+        End If
+        If Filever_text.Text = "KR" Then
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+        End If
     End Sub
 
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click

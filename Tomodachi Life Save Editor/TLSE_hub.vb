@@ -703,6 +703,7 @@ Public Class TLSE_hub
         Catch ex As Exception
         End Try
         'TLSE_language()
+        Switchfilever()
     End Sub
 
     Public Sub TLSE_language()
@@ -809,6 +810,7 @@ Public Class TLSE_hub
             End If
             TLSE_filepath.Text = savedataArc
             Makebackup()
+            Switchfilever()
         Catch ex As Exception
         End Try
     End Sub
@@ -880,6 +882,7 @@ Public Class TLSE_hub
             End If
         End If
         Checkissues()
+        Switchfilever()
     End Sub
 
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
@@ -910,4 +913,25 @@ Public Class TLSE_hub
     Private Sub text_issues_Click(sender As Object, e As EventArgs) Handles text_issues.Click
         My.Settings.Para_issue = Nothing
     End Sub
+
+    Public Sub Switchfilever()
+        If Filever_text.Text = "EU" Then
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+        End If
+        If Filever_text.Text = "US" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+        End If
+        If Filever_text.Text = "JP" Then
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+        End If
+        If Filever_text.Text = "KR" Then
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+        End If
+    End Sub
+
+
 End Class

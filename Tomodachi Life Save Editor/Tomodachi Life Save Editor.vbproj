@@ -455,6 +455,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\logo_KR_update.gif" />
+    <None Include="Resources\logo_JP_update.gif" />
+    <None Include="Resources\logo_EU_update.gif" />
     <None Include="Resources\icon_lock.png" />
     <None Include="Resources\bg_starmiilevel.png" />
     <None Include="Resources\HCdefault.png" />

@@ -112,6 +112,7 @@ Public Class TLSE_miistatus
         Filever_text.Text = TLSE_hub.Filever_text.Text
         savedataArc = TLSE_filepath.Text
         Readmiiname()
+        Switchfilever()
     End Sub
 
     Private Sub Menuflow_text_itemsedition_Click(sender As Object, e As EventArgs) Handles Menuflow_text_itemsedition.Click
@@ -4673,5 +4674,180 @@ Public Class TLSE_miistatus
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write Mii status"
             TLSE_dialog.ShowDialog()
         End Try
+    End Sub
+
+    Private Sub Check_catchphrase_J1_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_catchphrase_J1.MouseMove, Check_catchphrase_J2.MouseMove, Check_catchphrase_1.MouseMove, Check_catchphrase_2.MouseMove, Check_catchphrase_3.MouseMove, Check_catchphrase_4.MouseMove, Check_catchphrase_5.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to allow editing"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour autoriser l'édition"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_catchphrase_J1_MouseLeave(sender As Object, e As EventArgs) Handles Check_catchphrase_J1.MouseLeave, Check_catchphrase_J2.MouseLeave, Check_catchphrase_1.MouseLeave, Check_catchphrase_2.MouseLeave, Check_catchphrase_3.MouseLeave, Check_catchphrase_4.MouseLeave, Check_catchphrase_5.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Public Sub Switchfilever()
+        If Filever_text.Text = "JP" Then
+            Check_catchphrase_J1.Visible = True
+            Check_catchphrase_J2.Visible = True
+            Check_catchphrase_1.Visible = False
+            Panel_cathph_J1.Visible = True
+            Panel_cathph_J2.Visible = True
+            Panel_cathph_01.Visible = False
+            Title_gesture.Visible = False
+            valu_gesture_1.Visible = False
+            valu_gesture_2.Visible = False
+            valu_gesture_3.Visible = False
+            valu_gesture_4.Visible = False
+            valu_gesture_5.Visible = False
+            Fea_lock_1.Visible = False
+        End If
+        If Filever_text.Text = "EU" Then
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+        End If
+        If Filever_text.Text = "US" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+        End If
+        If Filever_text.Text = "JP" Then
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+        End If
+        If Filever_text.Text = "KR" Then
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+        End If
+    End Sub
+
+    Private Sub Fea_lock_1_Click(sender As Object, e As EventArgs) Handles Fea_lock_1.Click
+        If Select_mii.SelectedItem = Nothing Then
+        Else
+            Try
+                Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writedata.Position = Catchphrase1
+                Writedata.WriteHexString(Text_lockcatchphr.Text)
+                Writedata.Flush()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This catchphrase has been successfully set as locked"
+                TLSE_dialog.ShowDialog()
+                TLSE_hub.Show()
+                TLSE_hub.Filever_text.Text = Filever_text.Text
+                TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+                TLSE_hub.TLSE_menu.Visible = False
+                TLSE_hub.TLSE_menu_Miiedition.Visible = True
+                Me.Close()
+            Catch ex As Exception
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to set as locked"
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Fea_lock_2_Click(sender As Object, e As EventArgs) Handles Fea_lock_2.Click
+        If Select_mii.SelectedItem = Nothing Then
+        Else
+            Try
+                Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writedata.Position = Catchphrase2
+                Writedata.WriteHexString(Text_lockcatchphr.Text)
+                Writedata.Flush()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This catchphrase has been successfully set as locked"
+                TLSE_dialog.ShowDialog()
+                TLSE_hub.Show()
+                TLSE_hub.Filever_text.Text = Filever_text.Text
+                TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+                TLSE_hub.TLSE_menu.Visible = False
+                TLSE_hub.TLSE_menu_Miiedition.Visible = True
+                Me.Close()
+            Catch ex As Exception
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to set as locked"
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Fea_lock_3_Click(sender As Object, e As EventArgs) Handles Fea_lock_3.Click
+        If Select_mii.SelectedItem = Nothing Then
+        Else
+            Try
+                Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writedata.Position = Catchphrase3
+                Writedata.WriteHexString(Text_lockcatchphr.Text)
+                Writedata.Flush()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This catchphrase has been successfully set as locked"
+                TLSE_dialog.ShowDialog()
+                TLSE_hub.Show()
+                TLSE_hub.Filever_text.Text = Filever_text.Text
+                TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+                TLSE_hub.TLSE_menu.Visible = False
+                TLSE_hub.TLSE_menu_Miiedition.Visible = True
+                Me.Close()
+            Catch ex As Exception
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to set as locked"
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Fea_lock_4_Click(sender As Object, e As EventArgs) Handles Fea_lock_4.Click
+        If Select_mii.SelectedItem = Nothing Then
+        Else
+            Try
+                Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writedata.Position = Catchphrase4
+                Writedata.WriteHexString(Text_lockcatchphr.Text)
+                Writedata.Flush()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This catchphrase has been successfully set as locked"
+                TLSE_dialog.ShowDialog()
+                TLSE_hub.Show()
+                TLSE_hub.Filever_text.Text = Filever_text.Text
+                TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+                TLSE_hub.TLSE_menu.Visible = False
+                TLSE_hub.TLSE_menu_Miiedition.Visible = True
+                Me.Close()
+            Catch ex As Exception
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to set as locked"
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Fea_lock_5_Click(sender As Object, e As EventArgs) Handles Fea_lock_5.Click
+        If Select_mii.SelectedItem = Nothing Then
+        Else
+            Try
+                Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writedata.Position = Catchphrase5
+                Writedata.WriteHexString(Text_lockcatchphr.Text)
+                Writedata.Flush()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This catchphrase has been successfully set as locked"
+                TLSE_dialog.ShowDialog()
+                TLSE_hub.Show()
+                TLSE_hub.Filever_text.Text = Filever_text.Text
+                TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+                TLSE_hub.TLSE_menu.Visible = False
+                TLSE_hub.TLSE_menu_Miiedition.Visible = True
+                Me.Close()
+            Catch ex As Exception
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to set as locked"
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Fea_lock_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_lock_1.MouseMove, Fea_lock_2.MouseMove, Fea_lock_3.MouseMove, Fea_lock_4.MouseMove, Fea_lock_5.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to set catchphase as locked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour verrouiller l'expression"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Fea_lock_1_MouseLeave(sender As Object, e As EventArgs) Handles Fea_lock_1.MouseLeave, Fea_lock_2.MouseLeave, Fea_lock_3.MouseLeave, Fea_lock_4.MouseLeave, Fea_lock_5.MouseLeave
+        Panel_description.Visible = False
     End Sub
 End Class
