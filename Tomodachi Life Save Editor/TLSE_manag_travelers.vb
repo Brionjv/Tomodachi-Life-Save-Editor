@@ -1047,10 +1047,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_1 + &HB50)
-                    WriteMii.WriteHexString(&H1)
+                    WriteMii.WriteInt8(&H1)
                 Else
                     WriteMii.Position = (Traveler_1 + &HC20)
-                    WriteMii.WriteHexString(&H1)
+                    WriteMii.WriteInt8(&H1)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
@@ -1058,10 +1058,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_2 + &HB50)
-                    WriteMii.WriteHexString(&H2)
+                    WriteMii.WriteInt8(&H2)
                 Else
                     WriteMii.Position = (Traveler_2 + &HC20)
-                    WriteMii.WriteHexString(&H2)
+                    WriteMii.WriteInt8(&H2)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
@@ -1069,10 +1069,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_3 + &HB50)
-                    WriteMii.WriteHexString(&H3)
+                    WriteMii.WriteInt8(&H3)
                 Else
                     WriteMii.Position = (Traveler_3 + &HC20)
-                    WriteMii.WriteHexString(&H3)
+                    WriteMii.WriteInt8(&H3)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
@@ -1080,10 +1080,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_4 + &HB50)
-                    WriteMii.WriteHexString(&H4)
+                    WriteMii.WriteInt8(&H4)
                 Else
                     WriteMii.Position = (Traveler_4 + &HC20)
-                    WriteMii.WriteHexString(&H4)
+                    WriteMii.WriteInt8(&H4)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
@@ -1091,10 +1091,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_5 + &HB50)
-                    WriteMii.WriteHexString(&H5)
+                    WriteMii.WriteInt8(&H5)
                 Else
                     WriteMii.Position = (Traveler_5 + &HC20)
-                    WriteMii.WriteHexString(&H5)
+                    WriteMii.WriteInt8(&H5)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
@@ -1102,10 +1102,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_6 + &HB50)
-                    WriteMii.WriteHexString(&H6)
+                    WriteMii.WriteInt8(&H6)
                 Else
                     WriteMii.Position = (Traveler_6 + &HC20)
-                    WriteMii.WriteHexString(&H6)
+                    WriteMii.WriteInt8(&H6)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
@@ -1113,10 +1113,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_7 + &HB50)
-                    WriteMii.WriteHexString(&H7)
+                    WriteMii.WriteInt8(&H7)
                 Else
                     WriteMii.Position = (Traveler_7 + &HC20)
-                    WriteMii.WriteHexString(&H7)
+                    WriteMii.WriteInt8(&H7)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
@@ -1124,10 +1124,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_8 + &HB50)
-                    WriteMii.WriteHexString(&H8)
+                    WriteMii.WriteInt8(&H8)
                 Else
                     WriteMii.Position = (Traveler_8 + &HC20)
-                    WriteMii.WriteHexString(&H8)
+                    WriteMii.WriteInt8(&H8)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
@@ -1135,10 +1135,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_9 + &HB50)
-                    WriteMii.WriteHexString(&H9)
+                    WriteMii.WriteInt8(&H9)
                 Else
                     WriteMii.Position = (Traveler_9 + &HC20)
-                    WriteMii.WriteHexString(&H9)
+                    WriteMii.WriteInt8(&H9)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
@@ -1146,10 +1146,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_10 + &HB50)
-                    WriteMii.WriteHexString(&HA)
+                    WriteMii.WriteInt8(&HA)
                 Else
                     WriteMii.Position = (Traveler_10 + &HC20)
-                    WriteMii.WriteHexString(&HA)
+                    WriteMii.WriteInt8(&HA)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
@@ -1157,10 +1157,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_11 + &HB50)
-                    WriteMii.WriteHexString(&HB)
+                    WriteMii.WriteInt8(&HB)
                 Else
                     WriteMii.Position = (Traveler_11 + &HC20)
-                    WriteMii.WriteHexString(&HB)
+                    WriteMii.WriteInt8(&HB)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
@@ -1168,10 +1168,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_12 + &HB50)
-                    WriteMii.WriteHexString(&HC)
+                    WriteMii.WriteInt8(&HC)
                 Else
                     WriteMii.Position = (Traveler_12 + &HC20)
-                    WriteMii.WriteHexString(&HC)
+                    WriteMii.WriteInt8(&HC)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
@@ -1179,10 +1179,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_13 + &HB50)
-                    WriteMii.WriteHexString(&HD)
+                    WriteMii.WriteInt8(&HD)
                 Else
                     WriteMii.Position = (Traveler_13 + &HC20)
-                    WriteMii.WriteHexString(&HD)
+                    WriteMii.WriteInt8(&HD)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
@@ -1190,10 +1190,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_14 + &HB50)
-                    WriteMii.WriteHexString(&HE)
+                    WriteMii.WriteInt8(&HE)
                 Else
                     WriteMii.Position = (Traveler_14 + &HC20)
-                    WriteMii.WriteHexString(&HE)
+                    WriteMii.WriteInt8(&HE)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
@@ -1201,10 +1201,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_15 + &HB50)
-                    WriteMii.WriteHexString(&HF)
+                    WriteMii.WriteInt8(&HF)
                 Else
                     WriteMii.Position = (Traveler_15 + &HC20)
-                    WriteMii.WriteHexString(&HF)
+                    WriteMii.WriteInt8(&HF)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
@@ -1212,10 +1212,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_16 + &HB50)
-                    WriteMii.WriteHexString(&H10)
+                    WriteMii.WriteInt8(&H10)
                 Else
                     WriteMii.Position = (Traveler_16 + &HC20)
-                    WriteMii.WriteHexString(&H10)
+                    WriteMii.WriteInt8(&H10)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
@@ -1223,10 +1223,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_17 + &HB50)
-                    WriteMii.WriteHexString(&H11)
+                    WriteMii.WriteInt8(&H11)
                 Else
                     WriteMii.Position = (Traveler_17 + &HC20)
-                    WriteMii.WriteHexString(&H11)
+                    WriteMii.WriteInt8(&H11)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
@@ -1234,10 +1234,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_18 + &HB50)
-                    WriteMii.WriteHexString(&H12)
+                    WriteMii.WriteInt8(&H12)
                 Else
                     WriteMii.Position = (Traveler_18 + &HC20)
-                    WriteMii.WriteHexString(&H12)
+                    WriteMii.WriteInt8(&H12)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
@@ -1245,10 +1245,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_19 + &HB50)
-                    WriteMii.WriteHexString(&H13)
+                    WriteMii.WriteInt8(&H13)
                 Else
                     WriteMii.Position = (Traveler_19 + &HC20)
-                    WriteMii.WriteHexString(&H13)
+                    WriteMii.WriteInt8(&H13)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
@@ -1256,10 +1256,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_20 + &HB50)
-                    WriteMii.WriteHexString(&H14)
+                    WriteMii.WriteInt8(&H14)
                 Else
                     WriteMii.Position = (Traveler_20 + &HC20)
-                    WriteMii.WriteHexString(&H14)
+                    WriteMii.WriteInt8(&H14)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
@@ -1267,10 +1267,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_21 + &HB50)
-                    WriteMii.WriteHexString(&H15)
+                    WriteMii.WriteInt8(&H15)
                 Else
                     WriteMii.Position = (Traveler_21 + &HC20)
-                    WriteMii.WriteHexString(&H15)
+                    WriteMii.WriteInt8(&H15)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
@@ -1278,10 +1278,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_22 + &HB50)
-                    WriteMii.WriteHexString(&H16)
+                    WriteMii.WriteInt8(&H16)
                 Else
                     WriteMii.Position = (Traveler_22 + &HC20)
-                    WriteMii.WriteHexString(&H16)
+                    WriteMii.WriteInt8(&H16)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
@@ -1289,10 +1289,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_23 + &HB50)
-                    WriteMii.WriteHexString(&H17)
+                    WriteMii.WriteInt8(&H17)
                 Else
                     WriteMii.Position = (Traveler_23 + &HC20)
-                    WriteMii.WriteHexString(&H17)
+                    WriteMii.WriteInt8(&H17)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
@@ -1300,10 +1300,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_24 + &HB50)
-                    WriteMii.WriteHexString(&H18)
+                    WriteMii.WriteInt8(&H18)
                 Else
                     WriteMii.Position = (Traveler_24 + &HC20)
-                    WriteMii.WriteHexString(&H18)
+                    WriteMii.WriteInt8(&H18)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
@@ -1311,10 +1311,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_25 + &HB50)
-                    WriteMii.WriteHexString(&H19)
+                    WriteMii.WriteInt8(&H19)
                 Else
                     WriteMii.Position = (Traveler_25 + &HC20)
-                    WriteMii.WriteHexString(&H19)
+                    WriteMii.WriteInt8(&H19)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
@@ -1322,10 +1322,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_26 + &HB50)
-                    WriteMii.WriteHexString(&H1A)
+                    WriteMii.WriteInt8(&H1A)
                 Else
                     WriteMii.Position = (Traveler_26 + &HC20)
-                    WriteMii.WriteHexString(&H1A)
+                    WriteMii.WriteInt8(&H1A)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
@@ -1333,10 +1333,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_27 + &HB50)
-                    WriteMii.WriteHexString(&H1B)
+                    WriteMii.WriteInt8(&H1B)
                 Else
                     WriteMii.Position = (Traveler_27 + &HC20)
-                    WriteMii.WriteHexString(&H1B)
+                    WriteMii.WriteInt8(&H1B)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
@@ -1344,10 +1344,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_28 + &HB50)
-                    WriteMii.WriteHexString(&H1C)
+                    WriteMii.WriteInt8(&H1C)
                 Else
                     WriteMii.Position = (Traveler_28 + &HC20)
-                    WriteMii.WriteHexString(&H1C)
+                    WriteMii.WriteInt8(&H1C)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
@@ -1355,10 +1355,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_29 + &HB50)
-                    WriteMii.WriteHexString(&H1D)
+                    WriteMii.WriteInt8(&H1D)
                 Else
                     WriteMii.Position = (Traveler_29 + &HC20)
-                    WriteMii.WriteHexString(&H1D)
+                    WriteMii.WriteInt8(&H1D)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
@@ -1366,10 +1366,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_30 + &HB50)
-                    WriteMii.WriteHexString(&H1E)
+                    WriteMii.WriteInt8(&H1E)
                 Else
                     WriteMii.Position = (Traveler_30 + &HC20)
-                    WriteMii.WriteHexString(&H1E)
+                    WriteMii.WriteInt8(&H1E)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
@@ -1377,10 +1377,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_31 + &HB50)
-                    WriteMii.WriteHexString(&H1F)
+                    WriteMii.WriteInt8(&H1F)
                 Else
                     WriteMii.Position = (Traveler_31 + &HC20)
-                    WriteMii.WriteHexString(&H1F)
+                    WriteMii.WriteInt8(&H1F)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
@@ -1388,10 +1388,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_32 + &HB50)
-                    WriteMii.WriteHexString(&H20)
+                    WriteMii.WriteInt8(&H20)
                 Else
                     WriteMii.Position = (Traveler_32 + &HC20)
-                    WriteMii.WriteHexString(&H20)
+                    WriteMii.WriteInt8(&H20)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
@@ -1399,10 +1399,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_33 + &HB50)
-                    WriteMii.WriteHexString(&H21)
+                    WriteMii.WriteInt8(&H21)
                 Else
                     WriteMii.Position = (Traveler_33 + &HC20)
-                    WriteMii.WriteHexString(&H21)
+                    WriteMii.WriteInt8(&H21)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
@@ -1410,10 +1410,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_34 + &HB50)
-                    WriteMii.WriteHexString(&H22)
+                    WriteMii.WriteInt8(&H22)
                 Else
                     WriteMii.Position = (Traveler_34 + &HC20)
-                    WriteMii.WriteHexString(&H22)
+                    WriteMii.WriteInt8(&H22)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
@@ -1421,10 +1421,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_35 + &HB50)
-                    WriteMii.WriteHexString(&H23)
+                    WriteMii.WriteInt8(&H23)
                 Else
                     WriteMii.Position = (Traveler_35 + &HC20)
-                    WriteMii.WriteHexString(&H23)
+                    WriteMii.WriteInt8(&H23)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
@@ -1432,10 +1432,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_36 + &HB50)
-                    WriteMii.WriteHexString(&H24)
+                    WriteMii.WriteInt8(&H24)
                 Else
                     WriteMii.Position = (Traveler_36 + &HC20)
-                    WriteMii.WriteHexString(&H24)
+                    WriteMii.WriteInt8(&H24)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
@@ -1443,10 +1443,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_37 + &HB50)
-                    WriteMii.WriteHexString(&H25)
+                    WriteMii.WriteInt8(&H25)
                 Else
                     WriteMii.Position = (Traveler_37 + &HC20)
-                    WriteMii.WriteHexString(&H25)
+                    WriteMii.WriteInt8(&H25)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
@@ -1454,10 +1454,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_38 + &HB50)
-                    WriteMii.WriteHexString(&H26)
+                    WriteMii.WriteInt8(&H26)
                 Else
                     WriteMii.Position = (Traveler_38 + &HC20)
-                    WriteMii.WriteHexString(&H26)
+                    WriteMii.WriteInt8(&H26)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
@@ -1465,10 +1465,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_39 + &HB50)
-                    WriteMii.WriteHexString(&H27)
+                    WriteMii.WriteInt8(&H27)
                 Else
                     WriteMii.Position = (Traveler_39 + &HC20)
-                    WriteMii.WriteHexString(&H27)
+                    WriteMii.WriteInt8(&H27)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
@@ -1476,10 +1476,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_40 + &HB50)
-                    WriteMii.WriteHexString(&H28)
+                    WriteMii.WriteInt8(&H28)
                 Else
                     WriteMii.Position = (Traveler_40 + &HC20)
-                    WriteMii.WriteHexString(&H28)
+                    WriteMii.WriteInt8(&H28)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
@@ -1487,10 +1487,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_41 + &HB50)
-                    WriteMii.WriteHexString(&H29)
+                    WriteMii.WriteInt8(&H29)
                 Else
                     WriteMii.Position = (Traveler_41 + &HC20)
-                    WriteMii.WriteHexString(&H29)
+                    WriteMii.WriteInt8(&H29)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
@@ -1498,10 +1498,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_42 + &HB50)
-                    WriteMii.WriteHexString(&H2A)
+                    WriteMii.WriteInt8(&H2A)
                 Else
                     WriteMii.Position = (Traveler_42 + &HC20)
-                    WriteMii.WriteHexString(&H2A)
+                    WriteMii.WriteInt8(&H2A)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
@@ -1509,10 +1509,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_43 + &HB50)
-                    WriteMii.WriteHexString(&H2B)
+                    WriteMii.WriteInt8(&H2B)
                 Else
                     WriteMii.Position = (Traveler_43 + &HC20)
-                    WriteMii.WriteHexString(&H2B)
+                    WriteMii.WriteInt8(&H2B)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
@@ -1520,10 +1520,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_44 + &HB50)
-                    WriteMii.WriteHexString(&H2C)
+                    WriteMii.WriteInt8(&H2C)
                 Else
                     WriteMii.Position = (Traveler_44 + &HC20)
-                    WriteMii.WriteHexString(&H2C)
+                    WriteMii.WriteInt8(&H2C)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
@@ -1531,10 +1531,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_45 + &HB50)
-                    WriteMii.WriteHexString(&H2D)
+                    WriteMii.WriteInt8(&H2D)
                 Else
                     WriteMii.Position = (Traveler_45 + &HC20)
-                    WriteMii.WriteHexString(&H2D)
+                    WriteMii.WriteInt8(&H2D)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
@@ -1542,10 +1542,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_46 + &HB50)
-                    WriteMii.WriteHexString(&H2E)
+                    WriteMii.WriteInt8(&H2E)
                 Else
                     WriteMii.Position = (Traveler_46 + &HC20)
-                    WriteMii.WriteHexString(&H2E)
+                    WriteMii.WriteInt8(&H2E)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
@@ -1553,10 +1553,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_47 + &HB50)
-                    WriteMii.WriteHexString(&H2F)
+                    WriteMii.WriteInt8(&H2F)
                 Else
                     WriteMii.Position = (Traveler_47 + &HC20)
-                    WriteMii.WriteHexString(&H2F)
+                    WriteMii.WriteInt8(&H2F)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
@@ -1564,10 +1564,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_48 + &HB50)
-                    WriteMii.WriteHexString(&H30)
+                    WriteMii.WriteInt8(&H30)
                 Else
                     WriteMii.Position = (Traveler_48 + &HC20)
-                    WriteMii.WriteHexString(&H30)
+                    WriteMii.WriteInt8(&H30)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
@@ -1575,10 +1575,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_49 + &HB50)
-                    WriteMii.WriteHexString(&H31)
+                    WriteMii.WriteInt8(&H31)
                 Else
                     WriteMii.Position = (Traveler_49 + &HC20)
-                    WriteMii.WriteHexString(&H31)
+                    WriteMii.WriteInt8(&H31)
                 End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
@@ -1586,10 +1586,10 @@ Public Class TLSE_manag_travelers
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
                 If Filever_text.Text = "JP" Then
                     WriteMii.Position = (Traveler_50 + &HB50)
-                    WriteMii.WriteHexString(&H32)
+                    WriteMii.WriteInt8(&H32)
                 Else
                     WriteMii.Position = (Traveler_50 + &HC20)
-                    WriteMii.WriteHexString(&H32)
+                    WriteMii.WriteInt8(&H32)
                 End If
             End If
             TLSE_dialog.Text_TLSE_dialog.Text = "This Traveler has been successfully replace"

@@ -426,6 +426,22 @@ Public Class TLSE_hub
         Menu_miiprofile.BackgroundImage = My.Resources.bbl_miiprofile
     End Sub
 
+    Private Sub Text_menu_miifoods_Click(sender As Object, e As EventArgs) Handles Text_menu_miifoods.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_miifoods.TLSE_logo_update.Visible = True
+        End If
+        TLSE_miifoods.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_miifoods_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miifoods.MouseMove
+        Menu_miifoods.BackgroundImage = My.Resources.bbl_miifoods_act
+    End Sub
+
+    Private Sub Text_menu_miifoods_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_miifoods.MouseLeave
+        Menu_miifoods.BackgroundImage = My.Resources.bbl_miifoods
+    End Sub
+
     Private Sub Text_menu_miistatus_Click(sender As Object, e As EventArgs) Handles Text_menu_miistatus.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_miistatus.TLSE_logo_update.Visible = True

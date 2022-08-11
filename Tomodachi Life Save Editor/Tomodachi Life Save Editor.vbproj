@@ -225,6 +225,12 @@
     <Compile Include="TLSE_manag_travelers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_miifoods.Designer.vb">
+      <DependentUpon>TLSE_miifoods.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_miifoods.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_miiprofile.Designer.vb">
       <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </Compile>
@@ -344,6 +350,9 @@
     <EmbeddedResource Include="TLSE_manag_travelers.resx">
       <DependentUpon>TLSE_manag_travelers.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_miifoods.resx">
+      <DependentUpon>TLSE_miifoods.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_miiprofile.resx">
       <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </EmbeddedResource>
@@ -455,6 +464,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\fullness_100.png" />
+    <None Include="Resources\fullness_75.png" />
+    <None Include="Resources\fullness_50.png" />
+    <None Include="Resources\fullness_25.png" />
+    <None Include="Resources\fullness_00.png" />
     <None Include="Resources\logo_KR_update.gif" />
     <None Include="Resources\logo_JP_update.gif" />
     <None Include="Resources\logo_EU_update.gif" />
