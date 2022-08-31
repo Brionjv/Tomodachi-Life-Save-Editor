@@ -7,3 +7,6 @@ If not working contact developper of these tools
 - Labels in relationships section can stay as "???" if your mii relationships levels as default see issue #139
 -> Informations : this little bug is only visual, your save file will not be corrupted if you click on save button
 -> How to fix : you can click on "???" label and switch your Mii to see the good information
+
+- In USA region foods list not work properly (set Ice cream cone)
+-> If your save file region is USA don't use this section
