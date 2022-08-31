@@ -427,11 +427,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_miifoods_Click(sender As Object, e As EventArgs) Handles Text_menu_miifoods.Click
-        If TLSE_logo_update.Visible = True Then
-            TLSE_miifoods.TLSE_logo_update.Visible = True
-        End If
-        TLSE_miifoods.Show()
-        Me.Close()
+        'If TLSE_logo_update.Visible = True Then
+        'TLSE_miifoods.TLSE_logo_update.Visible = True
+        'End If
+        'TLSE_miifoods.Show()
+        'Me.Close()
     End Sub
 
     Private Sub Text_menu_miifoods_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miifoods.MouseMove
@@ -440,6 +440,22 @@ Public Class TLSE_hub
 
     Private Sub Text_menu_miifoods_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_miifoods.MouseLeave
         Menu_miifoods.BackgroundImage = My.Resources.bbl_miifoods
+    End Sub
+
+    Private Sub Text_menu_miiinventory_Click(sender As Object, e As EventArgs) Handles Text_menu_miiinventory.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_miiinventory.TLSE_logo_update.Visible = True
+        End If
+        TLSE_miiinventory.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_miiinventory_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miiinventory.MouseMove
+        Menu_miiinventory.BackgroundImage = My.Resources.bbl_miiinventory_act
+    End Sub
+
+    Private Sub Text_menu_miiinventory_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_miiinventory.MouseLeave
+        Menu_miiinventory.BackgroundImage = My.Resources.bbl_miiinventory
     End Sub
 
     Private Sub Text_menu_miistatus_Click(sender As Object, e As EventArgs) Handles Text_menu_miistatus.Click

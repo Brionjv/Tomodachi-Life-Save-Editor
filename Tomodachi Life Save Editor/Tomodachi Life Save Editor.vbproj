@@ -231,6 +231,12 @@
     <Compile Include="TLSE_miifoods.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_miiinventory.Designer.vb">
+      <DependentUpon>TLSE_miiinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_miiinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_miiprofile.Designer.vb">
       <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </Compile>
@@ -353,6 +359,9 @@
     <EmbeddedResource Include="TLSE_miifoods.resx">
       <DependentUpon>TLSE_miifoods.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_miiinventory.resx">
+      <DependentUpon>TLSE_miiinventory.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_miiprofile.resx">
       <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </EmbeddedResource>
@@ -464,6 +473,39 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_broken.png" />
+    <None Include="Resources\Icon_equip_interior.png" />
+    <None Include="Resources\Icon_equip_hats.png" />
+    <None Include="Resources\Icon_equip_clothes.png" />
+    <None Include="Resources\gif_FFFF.png" />
+    <None Include="Resources\gif_1900.png" />
+    <None Include="Resources\gif_1800.png" />
+    <None Include="Resources\gif_1700.png" />
+    <None Include="Resources\gif_1600.png" />
+    <None Include="Resources\gif_1500.png" />
+    <None Include="Resources\gif_1400.png" />
+    <None Include="Resources\gif_1300.png" />
+    <None Include="Resources\gif_1200.png" />
+    <None Include="Resources\gif_1100.png" />
+    <None Include="Resources\gif_1000.png" />
+    <None Include="Resources\gif_0900.png" />
+    <None Include="Resources\gif_0800.png" />
+    <None Include="Resources\gif_0700.png" />
+    <None Include="Resources\gif_0600.png" />
+    <None Include="Resources\gif_0500.png" />
+    <None Include="Resources\gif_0400.png" />
+    <None Include="Resources\gif_0300.png" />
+    <None Include="Resources\gif_0200.png" />
+    <None Include="Resources\gif_0100.png" />
+    <None Include="Resources\gif_1b00.png" />
+    <None Include="Resources\gif_1a00.png" />
+    <None Include="Resources\gif_0f00.png" />
+    <None Include="Resources\gif_0e00.png" />
+    <None Include="Resources\gif_0d00.png" />
+    <None Include="Resources\gif_0c00.png" />
+    <None Include="Resources\gif_0b00.png" />
+    <None Include="Resources\gif_0a00.png" />
+    <None Include="Resources\gif_0000.png" />
     <None Include="Resources\fullness_100.png" />
     <None Include="Resources\fullness_75.png" />
     <None Include="Resources\fullness_50.png" />
