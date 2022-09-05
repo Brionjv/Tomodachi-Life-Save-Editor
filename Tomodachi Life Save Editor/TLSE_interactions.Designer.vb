@@ -3439,7 +3439,9 @@ Partial Class TLSE_interactions
                 " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
                 "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
                 " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
-                "Should I go ?", "I loss something very important", "_No correspondence ?_3", "_No correspondence ?_4", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?", "???"})
+                "Should I go ?", "I loss something very important", "What?! You found it? Thank you so much! So, {Mii} found it? I'm so relieved! This" &
+                " means so much to me. Thanks!", "I found this! Hey! It has {Mii} written on the back... Can you give it back to {M" &
+                "ii}?", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?", "???"})
         Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(509, 21)

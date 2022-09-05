@@ -63,7 +63,6 @@ Partial Class TLSE_hub
         Me.Icon_miimenu = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_menu_Miiedition = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Menu_miistatus = New System.Windows.Forms.Panel()
         Me.Text_menu_miistatus = New System.Windows.Forms.Label()
         Me.Menu_miiinventory = New System.Windows.Forms.Panel()
@@ -71,6 +70,7 @@ Partial Class TLSE_hub
         Me.Menu_miisongs = New System.Windows.Forms.Panel()
         Me.Text_menu_miisongs = New System.Windows.Forms.Label()
         Me.Menu_miifoods = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Text_menu_miifoods = New System.Windows.Forms.Label()
         Me.Icon_miiactivity = New System.Windows.Forms.PictureBox()
         Me.Menu_voicepersonnality = New System.Windows.Forms.Panel()
@@ -210,11 +210,11 @@ Partial Class TLSE_hub
         Me.Menu_travelersedit.SuspendLayout()
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu_Miiedition.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_miistatus.SuspendLayout()
         Me.Menu_miiinventory.SuspendLayout()
         Me.Menu_miisongs.SuspendLayout()
         Me.Menu_miifoods.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_voicepersonnality.SuspendLayout()
         Me.Menu_miiprofile.SuspendLayout()
@@ -709,15 +709,6 @@ Partial Class TLSE_hub
         Me.TLSE_menu_Miiedition.TabIndex = 33
         Me.TLSE_menu_Miiedition.Visible = False
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_broken
-        Me.PictureBox6.Location = New System.Drawing.Point(121, 0)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(34, 24)
-        Me.PictureBox6.TabIndex = 19
-        Me.PictureBox6.TabStop = False
-        '
         'Menu_miistatus
         '
         Me.Menu_miistatus.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miistatus
@@ -792,9 +783,19 @@ Partial Class TLSE_hub
         Me.Menu_miifoods.Size = New System.Drawing.Size(156, 126)
         Me.Menu_miifoods.TabIndex = 15
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_broken
+        Me.PictureBox6.Location = New System.Drawing.Point(121, 0)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(34, 24)
+        Me.PictureBox6.TabIndex = 19
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
         'Text_menu_miifoods
         '
-        Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_miifoods.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_miifoods.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_miifoods.Name = "Text_menu_miifoods"
@@ -994,7 +995,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.0.9"
+        Me.TLSE_version.Text = "Version 5.1.0"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -2111,11 +2112,11 @@ Partial Class TLSE_hub
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu_Miiedition.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_miistatus.ResumeLayout(False)
         Me.Menu_miiinventory.ResumeLayout(False)
         Me.Menu_miisongs.ResumeLayout(False)
         Me.Menu_miifoods.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_voicepersonnality.ResumeLayout(False)
         Me.Menu_miiprofile.ResumeLayout(False)

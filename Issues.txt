@@ -9,4 +9,4 @@ If not working contact developper of these tools
 -> How to fix : you can click on "???" label and switch your Mii to see the good information
 
 - Foods list not work properly (set Ice cream cone value for unknow reasons)
--> Mii foods section unactivated
+-> Mii foods section unactivated / Errors found in USA foods list (cause save file corruption in previous versions)

@@ -427,11 +427,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_miifoods_Click(sender As Object, e As EventArgs) Handles Text_menu_miifoods.Click
-        'If TLSE_logo_update.Visible = True Then
-        'TLSE_miifoods.TLSE_logo_update.Visible = True
-        'End If
-        'TLSE_miifoods.Show()
-        'Me.Close()
+        If TLSE_logo_update.Visible = True Then
+            TLSE_miifoods.TLSE_logo_update.Visible = True
+        End If
+        TLSE_miifoods.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_miifoods_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miifoods.MouseMove
