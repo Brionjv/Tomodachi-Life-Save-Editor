@@ -4,9 +4,11 @@ Warning :
 -> How to fix : Test with JK's save manager or Checkpoint
 If not working contact developper of these tools
 
-- Labels in relationships section can stay as "???" if your mii relationships levels as default see issue #139
+- Labels in relationships section can stay as "???" if your mii relationships levels as default (see issue #139)
 -> Informations : this little bug is only visual, your save file will not be corrupted if you click on save button
 -> How to fix : you can click on "???" label and switch your Mii to see the good information
 
 - Foods list not work properly (set Ice cream cone value for unknow reasons)
 -> Mii foods section unactivated / Errors found in USA foods list (cause save file corruption in previous versions)
+
+-Edit existing fight interaction to a huge fight interaction cause Tomodachi Life crash (see issue #141)
