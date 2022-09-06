@@ -775,7 +775,6 @@ Partial Class TLSE_hub
         'Menu_miifoods
         '
         Me.Menu_miifoods.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miifoods
-        Me.Menu_miifoods.Controls.Add(Me.PictureBox6)
         Me.Menu_miifoods.Controls.Add(Me.Text_menu_miifoods)
         Me.Menu_miifoods.Cursor = System.Windows.Forms.Cursors.Default
         Me.Menu_miifoods.Location = New System.Drawing.Point(646, 74)
@@ -786,7 +785,7 @@ Partial Class TLSE_hub
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_broken
-        Me.PictureBox6.Location = New System.Drawing.Point(121, 0)
+        Me.PictureBox6.Location = New System.Drawing.Point(247, 3)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(34, 24)
         Me.PictureBox6.TabIndex = 19
@@ -944,6 +943,7 @@ Partial Class TLSE_hub
         Me.Menu_flow.Controls.Add(Me.Icon_menu_miiedit)
         Me.Menu_flow.Controls.Add(Me.Panel5)
         Me.Menu_flow.Controls.Add(Me.Panel4)
+        Me.Menu_flow.Controls.Add(Me.PictureBox6)
         Me.Menu_flow.Location = New System.Drawing.Point(0, 0)
         Me.Menu_flow.Name = "Menu_flow"
         Me.Menu_flow.Size = New System.Drawing.Size(807, 57)

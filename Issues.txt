@@ -8,7 +8,7 @@ If not working contact developper of these tools
 -> Informations : this little bug is only visual, your save file will not be corrupted if you click on save button
 -> How to fix : you can click on "???" label and switch your Mii to see the good information
 
-- Foods list not work properly (set Ice cream cone value for unknow reasons)
--> Mii foods section unactivated / Errors found in USA foods list (cause save file corruption in previous versions)
-
 -Edit existing fight interaction to a huge fight interaction cause Tomodachi Life crash (see issue #141)
+
+- Foods values has been altered in your save file if you have edit Mii in 4.x.x version or older or Edit mii foods in 5.x.x version
+-> Edit with an other food in the list if you still have ice cream cone
