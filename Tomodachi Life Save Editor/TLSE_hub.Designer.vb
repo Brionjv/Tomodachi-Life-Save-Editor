@@ -70,7 +70,6 @@ Partial Class TLSE_hub
         Me.Menu_miisongs = New System.Windows.Forms.Panel()
         Me.Text_menu_miisongs = New System.Windows.Forms.Label()
         Me.Menu_miifoods = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Text_menu_miifoods = New System.Windows.Forms.Label()
         Me.Icon_miiactivity = New System.Windows.Forms.PictureBox()
         Me.Menu_voicepersonnality = New System.Windows.Forms.Panel()
@@ -90,6 +89,7 @@ Partial Class TLSE_hub
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_miiediton = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.TLSE_version = New System.Windows.Forms.Label()
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.TLSE_filepath = New System.Windows.Forms.TextBox()
@@ -172,6 +172,10 @@ Partial Class TLSE_hub
         Me.Menu_savefilesettings = New System.Windows.Forms.Panel()
         Me.Text_menu_savefilesettings = New System.Windows.Forms.Label()
         Me.TLSE_menu_datamanagement = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Menu_datamiiexchange = New System.Windows.Forms.Panel()
+        Me.Text_menu_datamiiexchange = New System.Windows.Forms.Label()
         Me.Menu_dataislandranking = New System.Windows.Forms.Panel()
         Me.Text_menu_dataislandranking = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
@@ -214,7 +218,6 @@ Partial Class TLSE_hub
         Me.Menu_miiinventory.SuspendLayout()
         Me.Menu_miisongs.SuspendLayout()
         Me.Menu_miifoods.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_voicepersonnality.SuspendLayout()
         Me.Menu_miiprofile.SuspendLayout()
@@ -226,6 +229,7 @@ Partial Class TLSE_hub
         Me.Menu_flow.SuspendLayout()
         CType(Me.Icon_menu_miiedit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_bspesymb.SuspendLayout()
         CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -276,6 +280,8 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit.SuspendLayout()
         Me.Menu_savefilesettings.SuspendLayout()
         Me.TLSE_menu_datamanagement.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Menu_datamiiexchange.SuspendLayout()
         Me.Menu_dataislandranking.SuspendLayout()
         Me.FlowLayoutPanel5.SuspendLayout()
         CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -782,16 +788,6 @@ Partial Class TLSE_hub
         Me.Menu_miifoods.Size = New System.Drawing.Size(156, 126)
         Me.Menu_miifoods.TabIndex = 15
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_broken
-        Me.PictureBox6.Location = New System.Drawing.Point(247, 3)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(34, 24)
-        Me.PictureBox6.TabIndex = 19
-        Me.PictureBox6.TabStop = False
-        Me.PictureBox6.Visible = False
-        '
         'Text_menu_miifoods
         '
         Me.Text_menu_miifoods.Cursor = System.Windows.Forms.Cursors.Hand
@@ -987,6 +983,16 @@ Partial Class TLSE_hub
         Me.Menuflow_text_miiediton.Text = "Mii edition"
         Me.Menuflow_text_miiediton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_broken
+        Me.PictureBox6.Location = New System.Drawing.Point(247, 3)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(34, 24)
+        Me.PictureBox6.TabIndex = 19
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
         'TLSE_version
         '
         Me.TLSE_version.BackColor = System.Drawing.Color.Transparent
@@ -995,7 +1001,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.1.0"
+        Me.TLSE_version.Text = "Version 5.1.1"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1903,6 +1909,8 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_datamanagement.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_datamanagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_datamanagement.Controls.Add(Me.Panel3)
+        Me.TLSE_menu_datamanagement.Controls.Add(Me.Menu_datamiiexchange)
         Me.TLSE_menu_datamanagement.Controls.Add(Me.Menu_dataislandranking)
         Me.TLSE_menu_datamanagement.Controls.Add(Me.FlowLayoutPanel5)
         Me.TLSE_menu_datamanagement.Location = New System.Drawing.Point(12, 81)
@@ -1910,6 +1918,49 @@ Partial Class TLSE_hub
         Me.TLSE_menu_datamanagement.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu_datamanagement.TabIndex = 40
         Me.TLSE_menu_datamanagement.Visible = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_dataislandexchange
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel3.Location = New System.Drawing.Point(303, 358)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(148, 148)
+        Me.Panel3.TabIndex = 20
+        '
+        'Label3
+        '
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(5, 5)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(138, 138)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Island exchange" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Extract or restore island in exchange list" &
+    ""
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_datamiiexchange
+        '
+        Me.Menu_datamiiexchange.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_datamiiexchange
+        Me.Menu_datamiiexchange.Controls.Add(Me.Text_menu_datamiiexchange)
+        Me.Menu_datamiiexchange.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_datamiiexchange.Location = New System.Drawing.Point(481, 247)
+        Me.Menu_datamiiexchange.Name = "Menu_datamiiexchange"
+        Me.Menu_datamiiexchange.Size = New System.Drawing.Size(148, 148)
+        Me.Menu_datamiiexchange.TabIndex = 19
+        '
+        'Text_menu_datamiiexchange
+        '
+        Me.Text_menu_datamiiexchange.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_datamiiexchange.ForeColor = System.Drawing.Color.Black
+        Me.Text_menu_datamiiexchange.Location = New System.Drawing.Point(5, 5)
+        Me.Text_menu_datamiiexchange.Name = "Text_menu_datamiiexchange"
+        Me.Text_menu_datamiiexchange.Size = New System.Drawing.Size(138, 138)
+        Me.Text_menu_datamiiexchange.TabIndex = 2
+        Me.Text_menu_datamiiexchange.Text = "Mii exchange" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Extract or restore Mii in exchange list"
+        Me.Text_menu_datamiiexchange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_dataislandranking
         '
@@ -2075,14 +2126,14 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu_datamanagement)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_datacreation)
-        Me.Controls.Add(Me.TLSE_menu_datamanagement)
-        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -2116,7 +2167,6 @@ Partial Class TLSE_hub
         Me.Menu_miiinventory.ResumeLayout(False)
         Me.Menu_miisongs.ResumeLayout(False)
         Me.Menu_miifoods.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_miiactivity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_voicepersonnality.ResumeLayout(False)
         Me.Menu_miiprofile.ResumeLayout(False)
@@ -2128,6 +2178,7 @@ Partial Class TLSE_hub
         Me.Menu_flow.ResumeLayout(False)
         CType(Me.Icon_menu_miiedit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_header.ResumeLayout(False)
         Me.TLSE_header.PerformLayout()
         Me.Panel_bspesymb.ResumeLayout(False)
@@ -2190,6 +2241,8 @@ Partial Class TLSE_hub
         Me.Menu_savefilesettings.ResumeLayout(False)
         Me.TLSE_menu_datamanagement.ResumeLayout(False)
         Me.TLSE_menu_datamanagement.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Menu_datamiiexchange.ResumeLayout(False)
         Me.Menu_dataislandranking.ResumeLayout(False)
         Me.FlowLayoutPanel5.ResumeLayout(False)
         CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2366,4 +2419,8 @@ Partial Class TLSE_hub
     Friend WithEvents Text_menu_miifoods As Label
     Friend WithEvents Icon_miiactivity As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Menu_datamiiexchange As Panel
+    Friend WithEvents Text_menu_datamiiexchange As Label
 End Class

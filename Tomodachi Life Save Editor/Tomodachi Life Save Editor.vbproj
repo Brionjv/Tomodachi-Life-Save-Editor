@@ -112,6 +112,12 @@
     <Compile Include="TLSE_dataislandranking.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_datamiiexchange.Designer.vb">
+      <DependentUpon>TLSE_datamiiexchange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_datamiiexchange.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_interactions.Designer.vb">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </Compile>
@@ -302,6 +308,9 @@
     <EmbeddedResource Include="TLSE_dataislandranking.resx">
       <DependentUpon>TLSE_dataislandranking.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_datamiiexchange.resx">
+      <DependentUpon>TLSE_datamiiexchange.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_interactions.resx">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </EmbeddedResource>
@@ -473,6 +482,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_miiexchange.png" />
+    <None Include="Resources\bbl_dataislandexchange_act.png" />
+    <None Include="Resources\bbl_dataislandexchange.png" />
+    <None Include="Resources\bbl_datamiiexchange_act.png" />
+    <None Include="Resources\bbl_datamiiexchange.png" />
     <None Include="Resources\icon_broken.png" />
     <None Include="Resources\Icon_equip_interior.png" />
     <None Include="Resources\Icon_equip_hats.png" />

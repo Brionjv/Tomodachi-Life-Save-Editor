@@ -683,7 +683,7 @@ Partial Class TLSE_dataislandranking
         'Icon_selectislandranking
         '
         Me.Icon_selectislandranking.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_islandranking
-        Me.Icon_selectislandranking.Location = New System.Drawing.Point(-1, 7)
+        Me.Icon_selectislandranking.Location = New System.Drawing.Point(0, 7)
         Me.Icon_selectislandranking.Name = "Icon_selectislandranking"
         Me.Icon_selectislandranking.Size = New System.Drawing.Size(25, 25)
         Me.Icon_selectislandranking.TabIndex = 0

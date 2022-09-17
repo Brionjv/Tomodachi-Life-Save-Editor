@@ -213,6 +213,7 @@ Partial Class TLSE_settings
         Me.Settings_Advhelp.Text = "Show advance help"
         Me.Settings_Advhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Settings_Advhelp.UseVisualStyleBackColor = False
+        Me.Settings_Advhelp.Visible = False
         '
         'Text_language
         '
@@ -293,6 +294,7 @@ Partial Class TLSE_settings
         Me.Settings_hidden.Text = "Show hidden things"
         Me.Settings_hidden.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Settings_hidden.UseVisualStyleBackColor = False
+        Me.Settings_hidden.Visible = False
         '
         'Selects_music
         '
@@ -306,6 +308,7 @@ Partial Class TLSE_settings
         Me.Selects_music.Name = "Selects_music"
         Me.Selects_music.Size = New System.Drawing.Size(41, 21)
         Me.Selects_music.TabIndex = 1
+        Me.Selects_music.Visible = False
         '
         'Settings_music
         '
@@ -325,6 +328,7 @@ Partial Class TLSE_settings
         Me.Settings_music.Text = "Active background music"
         Me.Settings_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Settings_music.UseVisualStyleBackColor = False
+        Me.Settings_music.Visible = False
         '
         'TLSE_logo_update
         '

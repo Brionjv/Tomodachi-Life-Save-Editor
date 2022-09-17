@@ -187,6 +187,22 @@ Public Class TLSE_hub
         Menu_dataislandranking.BackgroundImage = My.Resources.bbl_dataislandranking
     End Sub
 
+    Private Sub Text_menu_dataMiiexchange_Click(sender As Object, e As EventArgs) Handles Text_menu_datamiiexchange.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_datamiiexchange.TLSE_logo_update.Visible = True
+        End If
+        TLSE_datamiiexchange.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_dataMiiexchange_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datamiiexchange.MouseMove
+        Menu_datamiiexchange.BackgroundImage = My.Resources.bbl_datamiiexchange_act
+    End Sub
+
+    Private Sub Text_menu_dataMiiexchange_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datamiiexchange.MouseLeave
+        Menu_datamiiexchange.BackgroundImage = My.Resources.bbl_datamiiexchange
+    End Sub
+
     Private Sub Text_menu_islandsettings_Click(sender As Object, e As EventArgs) Handles Text_menu_islandsettings.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_islandsettings.TLSE_logo_update.Visible = True

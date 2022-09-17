@@ -41,3 +41,4 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_miistatus.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_miifoods.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_miiinventory.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_datamiiexchange.resources
