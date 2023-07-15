@@ -397,6 +397,7 @@ Partial Class TLSE_hub
         Me.Menu_babiesedit.Name = "Menu_babiesedit"
         Me.Menu_babiesedit.Size = New System.Drawing.Size(122, 199)
         Me.Menu_babiesedit.TabIndex = 18
+        Me.Menu_babiesedit.Visible = False
         '
         'Text_menu_babiesedit
         '
@@ -505,6 +506,7 @@ Partial Class TLSE_hub
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(232, 129)
         Me.Menu_manual.TabIndex = 11
+        Me.Menu_manual.Visible = False
         '
         'Text_menu_manual
         '
@@ -2126,14 +2128,14 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_datacreation)
         Me.Controls.Add(Me.TLSE_menu_datamanagement)
         Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
-        Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_datacreation)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
